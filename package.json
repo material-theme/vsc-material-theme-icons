@@ -1,0 +1,59 @@
+{
+    "name": "vsc-material-theme-icons",
+    "displayName": "Material Theme Icons",
+    "description": "Material Theme Icons, the most epic icons theme for Visual Studio Code and Material Theme.",
+    "version": "0.0.1",
+    "publisher": "equinusocio",
+    "license": "Apache-2.0",
+    "author": "Mattia Astorino [@equinusocio]",
+    "icon": "logo.png",
+    "galleryBanner": {
+        "color": "#11131C",
+        "theme": "dark"
+      },
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Themes",
+        "Other"
+    ],
+    "keywords": [
+        "VSCode",
+        "Themes"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test",
+        "release": "standard-version"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    },
+    "badges": [
+        {
+          "url": "https://camo.githubusercontent.com/d3c6e53aa66426dead24cdedab0e83082103bea6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f657175696e75736f63696f2f7673632d6d6174657269616c2d7468656d652e7376673f7374796c653d666c61742d737175617265",
+          "href": "https://github.com/equinusocio/vsc-material-theme-icons/issues",
+          "description": "Open issues"
+        }
+    ]
+}
