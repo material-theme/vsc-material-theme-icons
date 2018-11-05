@@ -54,7 +54,7 @@
       {
         "id": "eq-material-theme-icons-light",
         "label": "Material Theme Icons Light",
-        "path": "./themes/Material-Theme-Icons-Light.json"
+        "path": "./out/variants/Material-Theme-Icons-Light.json"
       }
     ]
   },

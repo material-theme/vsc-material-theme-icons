@@ -9,10 +9,10 @@ import {PATHS} from './helpers/paths';
 export default () => {
   const {themeIconVariants, variantsIcons}: IDefaults = getDefaultsJson();
   const themIconsJson = fs.readFileSync(path.resolve(PATHS.pathIcons), 'utf8');
-  Object.keys(themeIconVariants).forEach(variantName => {
+  for (const variantName of Object.keys(themeIconVariants)) {
     const jsonDefaults = JSON.parse(themIconsJson);
 
-    variantsIcons.forEach(iconname => {
+    for (const iconname of variantsIcons) {
       const newIconPath = jsonDefaults.iconDefinitions[iconname].iconPath.replace('.svg', `${variantName}.svg`);
       jsonDefaults.iconDefinitions[iconname].iconPath = newIconPath;
 
@@ -21,6 +21,8 @@ export default () => {
         JSON.stringify(jsonDefaults),
         {encoding: 'utf-8'}
       );
-    });
-  });
+    }
+  }
+
+  return Promise.resolve();
 };

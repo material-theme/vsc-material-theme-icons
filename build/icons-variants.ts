@@ -23,11 +23,12 @@ export default () => {
   const PACKAGE_JSON: IPackageJSON = require(path.resolve('./package.json'));
 
   // For each Material Theme variant colours
-  Object.keys(themeVariantsColours).forEach(variantName => {
-    PACKAGE_JSON.contributes.iconThemes.forEach(contribute => {
+  for (const variantName of Object.keys(themeVariantsColours)) {
+    for (const contribute of PACKAGE_JSON.contributes.iconThemes) {
+      console.log('Icons theme', contribute.path);
       const regexpCheck: RegExp = new RegExp(Object.keys(themeVariantsColours).join('|'), 'i');
       if (regexpCheck.test(contribute.path) || regexpCheck.test(contribute.id)) {
-        return;
+        continue;
       }
 
       const basepath: string = path.join(process.cwd(), contribute.path);
@@ -35,7 +36,7 @@ export default () => {
       const theme: IThemeIconsVariants = JSON.parse(JSON.stringify(basetheme));
       const variant = themeVariantsColours[variantName];
 
-      variantsIcons.forEach(iconName => {
+      for (const iconName of variantsIcons) {
         const basethemeIcon: IThemeIconsItem = (basetheme.iconDefinitions as any)[iconName];
         const themeIcon: IThemeIconsItem = (theme.iconDefinitions as any)[iconName];
 
@@ -46,7 +47,9 @@ export default () => {
         if (basethemeIcon !== undefined && themeIcon !== undefined) {
           writeIconVariant(basethemeIcon.iconPath, themeIcon.iconPath, variant);
         }
-      });
-    });
-  });
+      }
+    }
+  }
+
+  return Promise.resolve();
 };

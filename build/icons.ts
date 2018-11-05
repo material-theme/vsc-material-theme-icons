@@ -23,8 +23,8 @@ const iconFactory = (fileName: string): IIcon => {
   // if the icon filename starts with a folder prefix,
   // the resulting name will be prefixed only by an underscore,
   // otherwise the icon will be prefixed by a _file_ prefix
-  name = name.includes('folder') ?
-    name.includes('file') ? `_file_${ name }` : `_${ name }` :
+  name = name.indexOf('folder') ?
+    name.indexOf('file') ? `_file_${ name }` : `_${ name }` :
     name = `_${ name }`;
 
   console.log(`VSCode icon name ${ name } with filename ${ filename }`);
@@ -42,11 +42,12 @@ export default () => {
   ensureDir(path.join(PATHS.variants));
   icons[icons.length - 1].last = true;
 
-  partials.forEach(partial => {
+  for (const partial of partials) {
+    console.log('Partial: ', partial);
     partialsData[path.basename(partial, path.extname(partial))] = fs.readFileSync(
       path.join(PATHS.srcPartials, `./${partial}`),
     'utf-8');
-  });
+  }
 
   contents = mustache.render(
     fs.readFileSync(path.resolve(PATHS.srcIconsTheme), 'utf-8'),

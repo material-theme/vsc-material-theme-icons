@@ -34,12 +34,12 @@ const writeSVGIcon = (fromFile: string, toFile: string, accent: string): void =>
 export default () => {
   const basetheme: IThemeIconsAccents = require(ICON_VARIANTS_BASE_PATH);
 
-  Object.keys(DEFAULTS.accents).forEach(key => {
+  for (const key of Object.keys(DEFAULTS.accents)) {
     const iconName = replaceWhiteSpaces(key);
     const themecopy: IThemeIconsAccents = JSON.parse(JSON.stringify(basetheme));
     const variantPath: string = PATHS.pathIconKey(key);
 
-    DEFAULTS.accentableIcons.forEach(accentableIconName => {
+    for (const accentableIconName of DEFAULTS.accentableIcons) {
       console.log(`Preparing ${accentableIconName} accented icon`);
       const iconOriginDefinition: IThemeIconsItem = (basetheme.iconDefinitions as any)[accentableIconName];
       const iconCopyDefinition: IThemeIconsItem = (themecopy.iconDefinitions as any)[accentableIconName];
@@ -50,9 +50,9 @@ export default () => {
       } else {
         console.log(`Icon ${accentableIconName} not found`);
       }
-    });
+    }
 
     console.log('Accentable icons generated', variantPath);
     return Promise.resolve();
-  });
+  }
 };
