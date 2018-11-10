@@ -23,15 +23,19 @@
     "Themes"
   ],
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "onCommand:eqMaterialThemeIcons.fixIcons"
   ],
   "main": "./src/extension",
   "contributes": {
-    "commands": [{
-      "command": "extension.sayHello",
-      "title": "Hello World"
-    }],
-    "iconThemes": [{
+    "commands": [
+      {
+        "command": "eqMaterialThemeIcons.fixIcons",
+        "title": "Fix icons accent. Based on Material Theme",
+        "category": "🖌 Material Theme Icons"
+      }
+    ],
+    "iconThemes": [
+      {
         "id": "eq-material-theme-icons",
         "label": "Material Theme Icons",
         "path": "./out/variants/Material-Theme-Icons.json"
@@ -76,6 +80,7 @@
     "@types/ncp": "2.0.1",
     "@types/node": "^10.12.10",
     "@types/rimraf": "2.0.2",
+    "@types/semver": "5.5.0",
     "execa": "1.0.0",
     "json-minify": "1.0.0",
     "mustache": "3.0.1",
@@ -87,9 +92,14 @@
     "typescript": "^3.1.6",
     "vscode": "^1.1.21"
   },
-  "badges": [{
-    "url": "https://camo.githubusercontent.com/d3c6e53aa66426dead24cdedab0e83082103bea6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f657175696e75736f63696f2f7673632d6d6174657269616c2d7468656d652e7376673f7374796c653d666c61742d737175617265",
-    "href": "https://github.com/equinusocio/vsc-material-theme-icons/issues",
-    "description": "Open issues"
-  }]
+  "badges": [
+    {
+      "url": "https://camo.githubusercontent.com/d3c6e53aa66426dead24cdedab0e83082103bea6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f657175696e75736f63696f2f7673632d6d6174657269616c2d7468656d652e7376673f7374796c653d666c61742d737175617265",
+      "href": "https://github.com/equinusocio/vsc-material-theme-icons/issues",
+      "description": "Open issues"
+    }
+  ],
+  "dependencies": {
+    "semver": "5.6.0"
+  }
 }
