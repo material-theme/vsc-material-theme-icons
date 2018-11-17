@@ -1,12 +1,30 @@
-// import * as fs from 'fs';
-import {getCurrentThemeID} from '../helpers/vscode';
+import {writeFile} from 'fs';
+import {
+  getCurrentThemeID,
+  getCurrentIconsID,
+  setIconsID,
+  getMaterialThemeSettings,
+  reloadWindow
+} from '../lib/vscode';
+import {isMaterialTheme, getThemeIconVariant} from '../lib/material-theme';
+import {getDefaultsJson, getPackageJson, getIconsVariantJson, getAbsolutePath} from '../lib/fs';
+import {getIconsPath} from '../lib/icons';
+import {IAccents} from '../../typings/interfaces/defaults';
+import {IThemeIconsIconPath} from '../../typings/interfaces/icons';
 
-// const getIconDefinition = (definitions: any, iconName: string): IThemeIconsIconPath => {
-//   return (definitions as any)[iconName];
-// };
+const getIconDefinition = (definitions: any, iconName: string): IThemeIconsIconPath =>
+  (definitions as any)[iconName];
 
-// const replaceIconPathWithAccent = (iconPath: string, accentName: string): string =>
-//   iconPath.replace('.svg', `.accent.${ accentName }.svg`);
+const replaceIconPathWithAccent = (iconPath: string, accentName: string): string =>
+  iconPath.replace('.svg', `.accent.${ accentName }.svg`);
+
+const isAccent = (accentName: string, accents: IAccents): boolean =>
+  Boolean(Object.keys(accents).find(name => name === accentName));
+
+const newIconPath = (accent: string, accents: IAccents, outIcon: IThemeIconsIconPath) =>
+  isAccent(accent, accents) ?
+    replaceIconPathWithAccent(outIcon.iconPath, accent.replace(/\s+/, '-')) :
+    outIcon.iconPath;
 
 /**
  * Fix icons only when the Material Theme is installed and enabled
@@ -22,58 +40,56 @@ export default async () => {
   const themeLabel = getCurrentThemeID();
   console.log(themeLabel);
 
-  // // If this method was called without Material Theme set, just return
-  // if (!isMaterialTheme(themeLabel)) {
-  //   return deferred.resolve();
-  // }
+  // If this method was called without Material Theme set, just return
+  if (!isMaterialTheme(themeLabel)) {
+    return deferred.resolve();
+  }
 
-  // const DEFAULTS = getDefaultValues();
-  // const CUSTOM_SETTINGS = getCustomSettings();
+  const DEFAULTS = getDefaultsJson();
+  const PKG = getPackageJson();
+  const MT_SETTINGS = getMaterialThemeSettings();
 
-  // const materialIconVariantID: string | null = getIconVariantFromTheme(themeLabel);
-  // const currentThemeIconsID: string = getCurrentThemeIconsID();
-  // const newThemeIconsID = materialIconVariantID ?
-  //   `eq-material-theme-icons-${materialIconVariantID}` : 'eq-material-theme-icons';
+  const materialIconVariantID: string | null = getThemeIconVariant(DEFAULTS, themeLabel);
+  const currentThemeIconsID: string = getCurrentIconsID();
+  const newThemeIconsID = materialIconVariantID ?
+    `eq-material-theme-icons-${materialIconVariantID}` : 'eq-material-theme-icons';
 
-  // // Just set the correct Material Theme icons variant if wasn't
-  // // Or also change the current icons set to the Material Theme icons variant
-  // // (this is intended: this command was called directly or `autoFix` flag was already checked by other code)
-  // if (currentThemeIconsID !== newThemeIconsID) {
-  //   await setIconsID(newThemeIconsID);
-  // }
+  // Just set the correct Material Theme icons variant if wasn't
+  // Or also change the current icons set to the Material Theme icons variant
+  // (this is intended: this command was called directly or `autoFix` flag was already checked by other code)
+  if (currentThemeIconsID !== newThemeIconsID) {
+    await setIconsID(newThemeIconsID);
+  }
 
-  // // package.json iconThemes object for the current icons set
-  // const themeIconsContribute: IPackageJSONThemeIcons = getThemeIconsContribute(newThemeIconsID);
-  // // Actual json file of the icons theme (eg. Material-Theme-Icons-Darker.json)
-  // const theme: IThemeIcons = getThemeIconsByContributeID(newThemeIconsID);
+  // package.json iconThemes object for the current icons set
+  const themeIconsPath = getIconsPath(PKG, newThemeIconsID);
+  // Actual json file of the icons theme (eg. Material-Theme-Icons-Darker.json)
+  const theme = getIconsVariantJson(themeIconsPath);
 
-  // const newIconPath = (outIcon: IThemeIconsIconPath) => isAccent(CUSTOM_SETTINGS.accent, DEFAULTS) ?
-  //   replaceIconPathWithAccent(outIcon.iconPath, CUSTOM_SETTINGS.accent.replace(/\s+/, '-')) : outIcon.iconPath;
+  for (const iconName of DEFAULTS.accentableIcons) {
+    const distIcon = getIconDefinition(theme.iconDefinitions, iconName);
+    const outIcon = getIconDefinition(DEFAULTS.icons.theme.iconDefinitions, iconName);
 
-  // getAccentableIcons().forEach(iconName => {
-  //   const distIcon = getIconDefinition(theme.iconDefinitions, iconName);
-  //   const outIcon = getIconDefinition(DEFAULTS.icons.theme.iconDefinitions, iconName);
-
-  //   if (typeof distIcon === 'object' && typeof outIcon === 'object') {
-  //     distIcon.iconPath = newIconPath(outIcon);
-  //   }
-  // });
+    if (typeof distIcon === 'object' && typeof outIcon === 'object') {
+      distIcon.iconPath = newIconPath(MT_SETTINGS.accent, DEFAULTS.accents, outIcon);
+    }
+  }
 
   // // Path of the icons theme .json
-  // const themePath: string = getAbsolutePath(themeIconsContribute.path);
-  // fs.writeFile(themePath, JSON.stringify(theme), {
-  //   encoding: CHARSET
-  // }, async err => {
-  //   if (err) {
-  //     deferred.reject(err);
-  //     return;
-  //   }
-  //   deferred.resolve();
-  // });
+  const themePath: string = getAbsolutePath(themeIconsPath);
+  // Write changes to current JSON icon
+  writeFile(themePath, JSON.stringify(theme), {
+    encoding: 'utf-8'
+  }, async err => {
+    if (err) {
+      deferred.reject(err);
+      return;
+    }
 
-  // return promise
-  //   .then(() => reloadWindow())
-  //   .catch((error: NodeJS.ErrnoException) => console.trace(error));
+    deferred.resolve();
+  });
 
-  return promise;
+  return promise
+    .then(() => reloadWindow())
+    .catch((error: NodeJS.ErrnoException) => console.trace(error));
 };

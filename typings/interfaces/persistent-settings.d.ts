@@ -8,7 +8,6 @@ export interface ISettings {
   isOSS: boolean;
   isDev: boolean;
   vscodeAppUserPath: string; // path to the vscode app user directory
-  workspacePath: string[]; // path to the workspace or root directory
   persistentSettingsFilePath: string;
   vscodeVersion: string;
   extensionSettings: IExtensionSettings;

@@ -23,9 +23,9 @@
     "Themes"
   ],
   "activationEvents": [
-    "onCommand:eqMaterialThemeIcons.fixIcons"
+    "*"
   ],
-  "main": "./src/extension",
+  "main": "./out/src/extension",
   "contributes": {
     "commands": [
       {
@@ -64,33 +64,43 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
+    "precompile": "yarn cleanup",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "cleanup": "rimraf _tmp-output-remote-icons out",
     "build": "yarn cleanup && tsc -p ./ && cp src/defaults.json out/src/ && node out/build/index.js",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "lint": "tslint **/*.ts",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test",
+    "pretest": "rimraf ./.nyc_output ./coverage && yarn compile",
+    "test": "nyc -x '' mocha",
+    "posttest": "nyc report -r lcov",
+    "test:vs": "node ./node_modules/vscode/bin/test",
     "release": "standard-version"
   },
   "devDependencies": {
+    "@types/chai": "4.1.7",
     "@types/execa": "0.9.0",
-    "@types/mocha": "^5.2.5",
+    "@types/mocha": "5.2.5",
     "@types/mustache": "0.8.32",
     "@types/ncp": "2.0.1",
-    "@types/node": "^10.12.10",
+    "@types/node": "10.12.5",
     "@types/rimraf": "2.0.2",
     "@types/semver": "5.5.0",
+    "@types/sinon": "5.0.5",
+    "chai": "4.2.0",
     "execa": "1.0.0",
     "json-minify": "1.0.0",
-    "mustache": "3.0.1",
+    "mocha": "5.2.0",
+    "mustache": "3.0.0",
     "ncp": "2.0.0",
+    "nyc": "13.1.0",
     "rimraf": "2.6.2",
+    "sinon": "7.1.1",
     "svgo": "1.1.1",
-    "tslint": "^5.8.0",
-    "tslint-xo": "0.10.0",
-    "typescript": "^3.1.6",
-    "vscode": "^1.1.21"
+    "tslint": "5.11.0",
+    "tslint-xo": "0.9.0",
+    "typescript": "3.1.6",
+    "vscode": "1.1.21"
   },
   "badges": [
     {

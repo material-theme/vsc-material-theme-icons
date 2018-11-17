@@ -8,7 +8,7 @@ import {IVSCode} from '../../typings/interfaces/vscode';
 import {FILES} from './constants';
 import {getPackageJson} from './fs';
 
-export class PersistentSettings implements IPersistentSettings {
+export default class PersistentSettings implements IPersistentSettings {
   private settings: ISettings;
 
   constructor(private vscode: IVSCode) {
@@ -34,7 +34,7 @@ export class PersistentSettings implements IPersistentSettings {
       version
     };
 
-    return {
+    this.settings = {
       isDev,
       isOSS,
       isInsiders,
@@ -43,7 +43,9 @@ export class PersistentSettings implements IPersistentSettings {
       vscodeAppUserPath,
       persistentSettingsFilePath,
       extensionSettings
-    } as ISettings;
+    };
+
+    return this.settings;
   }
 
   private vscodeAppName(isInsiders: boolean, isOSS: boolean, isDev: boolean): string {
@@ -112,9 +114,10 @@ export class PersistentSettings implements IPersistentSettings {
   }
 
   public isNewVersion(): boolean {
+    console.log(this.getState().version, this.settings.extensionSettings.version);
     return lt(
       this.getState().version,
-      this.settings.extensionSettings.version,
+      this.settings.extensionSettings.version
     );
   }
 }
