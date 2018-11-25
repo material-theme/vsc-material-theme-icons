@@ -36,9 +36,8 @@ export default async () => {
     deferred.reject = reject;
   });
 
-  // Current theme id set on VSCode ("label" of the package.json of the extension theme)
+  // Current theme id set on VSCode (id of the package.json of the extension theme)
   const themeLabel = getCurrentThemeID();
-  console.log(themeLabel);
 
   // If this method was called without Material Theme set, just return
   if (!isMaterialTheme(themeLabel)) {
