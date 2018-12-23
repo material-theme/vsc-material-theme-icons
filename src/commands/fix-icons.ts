@@ -74,7 +74,7 @@ export default async () => {
     }
   }
 
-  // // Path of the icons theme .json
+  // Path of the icons theme .json
   const themePath: string = getAbsolutePath(themeIconsPath);
   // Write changes to current JSON icon
   writeFile(themePath, JSON.stringify(theme), {

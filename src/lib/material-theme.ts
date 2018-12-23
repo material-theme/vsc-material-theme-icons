@@ -5,13 +5,16 @@
 import {IDefaults} from '../../typings/interfaces/defaults';
 
 export const materialThemes = [
-  'eq-material-theme-default',
-  'eq-material-theme-darker',
-  'eq-material-theme-darker-high-contrast',
-  'eq-material-theme-ocean',
-  'eq-material-theme-ocean-high-contrast',
-  'eq-material-theme-lighter',
-  'eq-material-theme-lighter-high-contrast'
+  'Material Theme',
+  'Material Theme High Contrast',
+  'Material Theme Darker',
+  'Material Theme Darker High Contrast',
+  'Material Theme Palenight',
+  'Material Theme Palenight High Contrast',
+  'Material Theme Ocean',
+  'Material Theme Ocean High Contrast',
+  'Material Theme Lighter',
+  'Material Theme Lighter High Contrast'
 ];
 
 export const isMaterialTheme = (currentThemeId: string): boolean =>

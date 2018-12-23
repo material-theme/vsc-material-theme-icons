@@ -48,31 +48,6 @@ export default class PersistentSettings implements IPersistentSettings {
     return this.settings;
   }
 
-  private vscodeAppName(isInsiders: boolean, isOSS: boolean, isDev: boolean): string {
-    return process.env.VSCODE_PORTABLE
-    ? 'user-data'
-    : isInsiders
-      ? 'Code - Insiders'
-      : isOSS
-        ? 'Code - OSS'
-        : isDev
-          ? 'code-oss-dev'
-          : 'Code';
-  }
-
-  private vscodePath(): string {
-    switch (process.platform) {
-      case 'darwin':
-        return `${os.homedir()}/Library/Application Support`;
-      case 'linux':
-        return `${os.homedir()}/.config`;
-      case 'win32':
-        return process.env.APPDATA as string;
-      default:
-        return '/var/local';
-    }
-  }
-
   public getState(): IState {
     const defaultState: IState = {
       version: '0.0.0'
@@ -119,5 +94,30 @@ export default class PersistentSettings implements IPersistentSettings {
       this.getState().version,
       this.settings.extensionSettings.version
     );
+  }
+
+  private vscodeAppName(isInsiders: boolean, isOSS: boolean, isDev: boolean): string {
+    return process.env.VSCODE_PORTABLE
+    ? 'user-data'
+    : isInsiders
+      ? 'Code - Insiders'
+      : isOSS
+        ? 'Code - OSS'
+        : isDev
+          ? 'code-oss-dev'
+          : 'Code';
+  }
+
+  private vscodePath(): string {
+    switch (process.platform) {
+      case 'darwin':
+        return `${os.homedir()}/Library/Application Support`;
+      case 'linux':
+        return `${os.homedir()}/.config`;
+      case 'win32':
+        return process.env.APPDATA as string;
+      default:
+        return '/var/local';
+    }
   }
 }

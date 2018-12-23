@@ -162,7 +162,7 @@
   },
   "themeIconVariants": {
     "Darker": "eq-material-theme-icons-darker",
-    "Light": "eq-material-theme-icons-light",
+    "Lighter": "eq-material-theme-icons-light",
     "Palenight": "eq-material-theme-icons-palenight",
     "Ocean": "eq-material-theme-icons-ocean"
   },
