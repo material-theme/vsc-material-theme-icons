@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import {IDefaults} from '../typings/interfaces/defaults';
-import {getDefaultsJson} from '../src/helpers/fs';
+import {getDefaultsJson} from '../src/lib/fs';
 
 import {PATHS} from './helpers/paths';
 

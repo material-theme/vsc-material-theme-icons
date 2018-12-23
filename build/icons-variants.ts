@@ -1,7 +1,7 @@
 import * as path from 'path';
 import * as fs from 'fs';
 import {PATHS} from './helpers/paths';
-import {getDefaultsJson} from '../src/helpers/fs';
+import {getDefaultsJson} from '../src/lib/fs';
 import {IPackageJSON} from '../typings/interfaces/packagejson';
 import {IDefaults} from '../typings/interfaces/defaults';
 import {IThemeIconsVariants, IThemeIconsItem} from '../typings/interfaces/icons';

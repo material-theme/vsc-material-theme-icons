@@ -37,9 +37,6 @@
     "_folder_dist_open",
     "_folder_ci_open"
   ],
-  "changelog": {
-    "lastversion": "0.0.0"
-  },
   "icons": {
     "theme": {
       "iconDefinitions": {
@@ -165,7 +162,7 @@
   },
   "themeIconVariants": {
     "Darker": "eq-material-theme-icons-darker",
-    "Light": "eq-material-theme-icons-light",
+    "Lighter": "eq-material-theme-icons-light",
     "Palenight": "eq-material-theme-icons-palenight",
     "Ocean": "eq-material-theme-icons-ocean"
   },

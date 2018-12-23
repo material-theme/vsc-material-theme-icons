@@ -3,3 +3,5 @@ node_modules
 .vscode-test/
 *.vsix
 src/icons/svgs
+coverage/
+.nyc_output/
