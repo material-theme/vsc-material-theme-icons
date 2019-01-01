@@ -87,7 +87,7 @@
     "@types/node": "10.12.18",
     "@types/rimraf": "2.0.2",
     "@types/semver": "5.5.0",
-    "@types/sinon": "7.0.2",
+    "@types/sinon": "7.0.3",
     "chai": "4.2.0",
     "codecov": "3.1.0",
     "execa": "1.0.0",
