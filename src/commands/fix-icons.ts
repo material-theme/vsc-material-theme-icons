@@ -1,4 +1,4 @@
-import {writeFile} from 'fs';
+import * as fs from 'fs';
 import {
   getCurrentThemeID,
   getCurrentIconsID,
@@ -77,9 +77,9 @@ export default async () => {
   // Path of the icons theme .json
   const themePath: string = getAbsolutePath(themeIconsPath);
   // Write changes to current JSON icon
-  writeFile(themePath, JSON.stringify(theme), {
+  fs.writeFile(themePath, JSON.stringify(theme), {
     encoding: 'utf-8'
-  }, async err => {
+  }, async (err: any) => {
     if (err) {
       deferred.reject(err);
       return;
