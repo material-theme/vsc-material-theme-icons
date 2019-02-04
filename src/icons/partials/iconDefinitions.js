@@ -1,7 +1,7 @@
 "iconDefinitions": {
-    {{#icons}}
-    "{{name}}": {
-      "iconPath": "../icons/{{filename}}.svg"
-    }{{^last}},{{/last}}
-    {{/icons}}
+  {{#icons}}
+  "{{name}}": {
+    "iconPath": "../icons/{{filename}}.svg"
+  }{{^last}},{{/last}}
+  {{/icons}}
 },
