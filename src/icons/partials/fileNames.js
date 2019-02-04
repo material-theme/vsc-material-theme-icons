@@ -1,4 +1,8 @@
 "fileNames": {
+  "nuxt.config.js": "_file_nuxtconfig",
+  "vue.config.js": "_file_vue",
+  ".browserslistrc": "_file_browserlist",
+  ".nvmrc": "_file_node",
   ".graphqlconfig.yml": "_file_graphql",
   ".graphqlconfig.yaml": "_file_graphql",
   "prettier.config.js": "_file_prettier",
@@ -77,7 +81,9 @@
   "license.md": "_file_license",
   "license.md.rendered": "_file_license",
   "license.txt": "_file_license",
+  "babel.config.js": "_file_babel",
   ".babelrc": "_file_babel",
+  ".babelrc.js": "_file_babel",
   ".babelrc.json": "_file_babel",
   ".eslintrc": "_file_eslint",
   ".eslintignore": "_file_eslint",
@@ -125,5 +131,7 @@
   ".angular-cli.json": "_file_angular",
   "directive.ts": "_file_angular-directive",
   "directive.js": "_file_angular-directive",
-  "favicon.ico": "_file_favicon"
+  "favicon.ico": "_file_favicon",
+  "mix.lock": "_file_elixir-lock",
+  "now.json": "_file_now"
 },
