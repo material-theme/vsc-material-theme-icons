@@ -6,7 +6,7 @@ import {getDefaultsJson} from '../src/lib/fs';
 
 import {PATHS} from './helpers/paths';
 
-export default () => {
+export default (): Promise<void> => {
   const {themeIconVariants, variantsIcons}: IDefaults = getDefaultsJson();
   const themIconsJson = fs.readFileSync(path.resolve(PATHS.pathIcons), 'utf8');
   for (const variantName of Object.keys(themeIconVariants)) {

@@ -1,4 +1,4 @@
-import {writeFile} from 'fs';
+import * as fs from 'fs';
 import {
   getCurrentThemeID,
   getCurrentIconsID,
@@ -21,7 +21,7 @@ const replaceIconPathWithAccent = (iconPath: string, accentName: string): string
 const isAccent = (accentName: string, accents: IAccents): boolean =>
   Boolean(Object.keys(accents).find(name => name === accentName));
 
-const newIconPath = (accent: string, accents: IAccents, outIcon: IThemeIconsIconPath) =>
+const newIconPath = (accent: string, accents: IAccents, outIcon: IThemeIconsIconPath): string =>
   isAccent(accent, accents) ?
     replaceIconPathWithAccent(outIcon.iconPath, accent.replace(/\s+/, '-')) :
     outIcon.iconPath;
@@ -29,9 +29,9 @@ const newIconPath = (accent: string, accents: IAccents, outIcon: IThemeIconsIcon
 /**
  * Fix icons only when the Material Theme is installed and enabled
  */
-export default async () => {
+export default async (): Promise<void> => {
   const deferred: any = {};
-  const promise = new Promise((resolve, reject) => {
+  const promise = new Promise((resolve, reject): void => {
     deferred.resolve = resolve;
     deferred.reject = reject;
   });
@@ -77,9 +77,7 @@ export default async () => {
   // Path of the icons theme .json
   const themePath: string = getAbsolutePath(themeIconsPath);
   // Write changes to current JSON icon
-  writeFile(themePath, JSON.stringify(theme), {
-    encoding: 'utf-8'
-  }, async err => {
+  fs.writeFile(themePath, JSON.stringify(theme), {encoding: 'utf-8'}, async (err: any) => {
     if (err) {
       deferred.reject(err);
       return;
@@ -88,7 +86,10 @@ export default async () => {
     deferred.resolve();
   });
 
-  return promise
-    .then(() => reloadWindow())
-    .catch((error: NodeJS.ErrnoException) => console.trace(error));
+  try {
+    await promise;
+    await reloadWindow();
+  } catch (error) {
+    console.trace(error);
+  }
 };

@@ -29,13 +29,13 @@ const iconFactory = (fileName: string): IIcon => {
 
   console.log(`VSCode icon name ${ name } with filename ${ filename }`);
 
-  return {filename, name, last} as IIcon;
+  return {filename, name, last};
 };
 
-export default () => {
+export default (): Promise<void> => {
   let contents: string;
   const fileNames: string[] = fs.readdirSync(path.resolve(PATHS.srcSvgs));
-  const icons: IIcon[] = fileNames.map(fileName => iconFactory(fileName));
+  const icons: IIcon[] = fileNames.map(iconFactory);
   const partials: string[] = fs.readdirSync(path.resolve(PATHS.srcPartials));
   const partialsData: IGenericObject<any> = {};
 
@@ -45,8 +45,7 @@ export default () => {
   for (const partial of partials) {
     console.log('Partial: ', partial);
     partialsData[path.basename(partial, path.extname(partial))] = fs.readFileSync(
-      path.join(PATHS.srcPartials, `./${partial}`),
-    'utf-8');
+      path.join(PATHS.srcPartials, `./${partial}`), 'utf-8');
   }
 
   contents = mustache.render(
@@ -55,7 +54,7 @@ export default () => {
     partialsData
   );
 
-  contents = JSON.stringify(JSON.parse(contents), null, 2);
+  contents = JSON.stringify(JSON.parse(contents), undefined, 2);
 
   fs.writeFileSync(PATHS.tmpPathIcons, contents, {encoding: 'utf-8'});
   console.log('----------');

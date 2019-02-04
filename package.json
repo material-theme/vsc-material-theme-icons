@@ -27,6 +27,14 @@
   ],
   "main": "./out/src/extension",
   "contributes": {
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "eqMaterialThemeIcons.fixIcons",
+          "when": "config.materialTheme.accent == true"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "eqMaterialThemeIcons.fixIcons",
@@ -84,10 +92,10 @@
     "@types/mocha": "5.2.5",
     "@types/mustache": "0.8.32",
     "@types/ncp": "2.0.1",
-    "@types/node": "10.12.18",
+    "@types/node": "10.12.21",
     "@types/rimraf": "2.0.2",
     "@types/semver": "5.5.0",
-    "@types/sinon": "7.0.4",
+    "@types/sinon": "7.0.5",
     "chai": "4.2.0",
     "codecov": "3.1.0",
     "execa": "1.0.0",
@@ -97,12 +105,12 @@
     "ncp": "2.0.0",
     "nyc": "13.1.0",
     "rimraf": "2.6.3",
-    "sinon": "7.2.2",
+    "sinon": "7.2.3",
     "svgo": "1.1.1",
-    "tslint": "5.12.0",
-    "tslint-xo": "0.11.0",
-    "typescript": "3.2.2",
-    "vscode": "1.1.26"
+    "tslint": "5.12.1",
+    "tslint-xo": "0.14.0",
+    "typescript": "3.3.1",
+    "vscode": "1.1.28"
   },
   "badges": [
     {
