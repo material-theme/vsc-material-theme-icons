@@ -15,7 +15,7 @@ export default class PersistentSettings implements IPersistentSettings {
     this.settings = this.getSettings();
   }
 
-  public getSettings() {
+  getSettings(): ISettings {
     const appName = this.vscode.env.appName || '';
     const isDev = /dev/i.test(appName);
     const isOSS = isDev && /oss/i.test(appName);
@@ -48,7 +48,7 @@ export default class PersistentSettings implements IPersistentSettings {
     return this.settings;
   }
 
-  public getState(): IState {
+  getState(): IState {
     const defaultState: IState = {
       version: '0.0.0'
     };
@@ -67,7 +67,7 @@ export default class PersistentSettings implements IPersistentSettings {
     }
   }
 
-  public setState(state: IState): void {
+  setState(state: IState): void {
     try {
       writeFileSync(this.settings.persistentSettingsFilePath, JSON.stringify(state));
     } catch (error) {
@@ -77,18 +77,18 @@ export default class PersistentSettings implements IPersistentSettings {
     }
   }
 
-  public deleteState() {
+  deleteState(): void {
     unlinkSync(this.settings.persistentSettingsFilePath);
   }
 
-  public updateStatus(): IState {
+  updateStatus(): IState {
     const state = this.getState();
     state.version = this.settings.extensionSettings.version;
     this.setState(state);
     return state;
   }
 
-  public isNewVersion(): boolean {
+  isNewVersion(): boolean {
     console.log(this.getState().version, this.settings.extensionSettings.version);
     return lt(
       this.getState().version,

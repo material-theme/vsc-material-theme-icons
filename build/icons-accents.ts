@@ -31,7 +31,7 @@ const writeSVGIcon = (fromFile: string, toFile: string, accent: string): void =>
   fs.writeFileSync(pathToFile, content);
 };
 
-export default () => {
+export default (): Promise<void> => {
   const basetheme: IThemeIconsAccents = require(ICON_VARIANTS_BASE_PATH);
 
   for (const key of Object.keys(DEFAULTS.accents)) {
@@ -51,8 +51,8 @@ export default () => {
         console.log(`Icon ${accentableIconName} not found`);
       }
     }
-
     console.log('Accentable icons generated', variantPath);
-    return Promise.resolve();
   }
+
+  return Promise.resolve();
 };

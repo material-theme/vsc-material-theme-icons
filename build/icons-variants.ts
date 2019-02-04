@@ -14,11 +14,12 @@ const writeIconVariant = (filepath: string, destpath: string, colour: string): v
   fs.writeFileSync(
     finalDestpath,
     fs.readFileSync(finalFilePath, 'utf-8')
-      .replace(regexp, ($0, $1) => $0.replace($1, colour)), {encoding: 'utf-8'}
+      .replace(regexp, ($0, $1) => $0.replace($1, colour)),
+    {encoding: 'utf-8'}
   );
 };
 
-export default () => {
+export default (): Promise<void> => {
   const {themeVariantsColours, variantsIcons}: IDefaults = getDefaultsJson();
   const PACKAGE_JSON: IPackageJSON = require(path.resolve('./package.json'));
 
