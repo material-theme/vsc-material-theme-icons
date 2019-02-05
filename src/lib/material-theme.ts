@@ -20,9 +20,9 @@ export const materialThemes = [
 export const isMaterialTheme = (currentThemeId: string): boolean =>
   materialThemes.includes(currentThemeId);
 
-export const getThemeIconVariant = (defaults: IDefaults, currentThemeId: string): string | null => {
+export const getThemeIconVariant = (defaults: IDefaults, currentThemeId: string): string | undefined => {
   const found = Object.keys(defaults.themeIconVariants)
     .find(variant => currentThemeId.includes(variant.toLowerCase()));
 
-  return found ? found.toLowerCase() : null;
+  return found ? found.toLowerCase() : undefined;
 };
