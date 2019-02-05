@@ -48,7 +48,7 @@ export default async (): Promise<void> => {
   const PKG = getPackageJson();
   const MT_SETTINGS = getMaterialThemeSettings();
 
-  const materialIconVariantID: string | null = getThemeIconVariant(DEFAULTS, themeLabel);
+  const materialIconVariantID: string | undefined = getThemeIconVariant(DEFAULTS, themeLabel);
   const currentThemeIconsID: string = getCurrentIconsID();
   const newThemeIconsID = materialIconVariantID ?
     `eq-material-theme-icons-${materialIconVariantID}` : 'eq-material-theme-icons';

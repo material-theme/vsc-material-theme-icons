@@ -10,9 +10,13 @@ import {getPackageJson} from './fs';
 
 export default class PersistentSettings implements IPersistentSettings {
   private settings: ISettings;
+  private defaultState: IState;
 
   constructor(private vscode: IVSCode) {
     this.settings = this.getSettings();
+    this.defaultState = {
+      version: '0.0.0'
+    };
   }
 
   getSettings(): ISettings {
@@ -49,12 +53,8 @@ export default class PersistentSettings implements IPersistentSettings {
   }
 
   getState(): IState {
-    const defaultState: IState = {
-      version: '0.0.0'
-    };
-
     if (!existsSync(this.settings.persistentSettingsFilePath)) {
-      return defaultState;
+      return this.defaultState;
     }
 
     try {
@@ -63,7 +63,7 @@ export default class PersistentSettings implements IPersistentSettings {
       // TODO: errorhandler
       // ErrorHandler.logError(error, true);
       console.log(error);
-      return defaultState;
+      return this.defaultState;
     }
   }
 
@@ -89,11 +89,16 @@ export default class PersistentSettings implements IPersistentSettings {
   }
 
   isNewVersion(): boolean {
-    console.log(this.getState().version, this.settings.extensionSettings.version);
-    return lt(
-      this.getState().version,
+    const currentVersionInstalled = this.getState().version;
+    // If is firstInstall
+    return currentVersionInstalled === this.defaultState.version ? false : lt(
+      currentVersionInstalled,
       this.settings.extensionSettings.version
     );
+  }
+
+  isFirstInstall(): boolean {
+    return this.getState().version === this.defaultState.version;
   }
 
   private vscodeAppName(isInsiders: boolean, isOSS: boolean, isDev: boolean): string {

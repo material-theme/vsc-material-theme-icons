@@ -8,10 +8,10 @@ import {vscode} from '../utils';
 import PersistentSettings from '../../src/lib/persistent-settings';
 import {IState} from '../../typings/interfaces/persistent-settings';
 
-describe('PersistentSettings: tests', function () {
-  context('ensures that', function () {
-    context('getting the settings', function () {
-      it('more than once, returns the same instance', function () {
+describe('PersistentSettings: tests', function (): void {
+  context('ensures that', function (): void {
+    context('getting the settings', function (): void {
+      it('more than once, returns the same instance', function (): void {
         const persistentSettings = new PersistentSettings(vscode);
         const settings = persistentSettings.getSettings();
         const settingsAgain = persistentSettings.getSettings();
@@ -20,7 +20,7 @@ describe('PersistentSettings: tests', function () {
         expect(settingsAgain).to.be.deep.equal(settings);
       });
 
-      it('detects correctly if it is in portable mode', function () {
+      it('detects correctly if it is in portable mode', function (): void {
         const sandbox = sinon
           .createSandbox()
           .stub(process, 'env')
@@ -30,8 +30,8 @@ describe('PersistentSettings: tests', function () {
         sandbox.restore();
       });
 
-      context('returns the correct name when application is the', function () {
-        it('`Code - Insiders`', function () {
+      context('returns the correct name when application is the', function (): void {
+        it('`Code - Insiders`', function (): void {
           vscode.env.appName = 'Visual Studio Code - Insiders';
           const settings = new PersistentSettings(vscode).getSettings();
           expect(settings.isInsiders).to.be.true;
@@ -39,7 +39,7 @@ describe('PersistentSettings: tests', function () {
           expect(settings.isDev).to.be.false;
         });
 
-        it('`Code`', function () {
+        it('`Code`', function (): void {
           vscode.env.appName = 'Visual Studio Code';
           const settings = new PersistentSettings(vscode).getSettings();
           expect(settings.isInsiders).to.be.false;
@@ -66,7 +66,7 @@ describe('PersistentSettings: tests', function () {
     });
   });
 
-  context('ensures that', function () {
+  context('ensures that', function (): void {
     let persistentSettings: PersistentSettings;
     let sandbox: sinon.SinonSandbox;
 
@@ -76,7 +76,7 @@ describe('PersistentSettings: tests', function () {
     });
 
     afterEach(() => {
-      persistentSettings = null as any;
+      persistentSettings = undefined as any;
       sandbox.restore();
     });
 
@@ -93,7 +93,7 @@ describe('PersistentSettings: tests', function () {
     //   expect(writeToFile.called).to.be.true;
     // });
 
-    it('the state gets written to a settings file', function () {
+    it('the state gets written to a settings file', function (): void {
       const writeToFile = sandbox.stub(fs, 'writeFileSync');
       const stateMock: IState = {
         version: '0.0.0'
@@ -102,7 +102,7 @@ describe('PersistentSettings: tests', function () {
       expect(writeToFile.called).to.be.true;
     });
 
-    it('the settings status gets updated', function () {
+    it('the settings status gets updated', function (): void {
       const stateMock: IState = {
         version: '1.0.0'
       };
@@ -115,7 +115,7 @@ describe('PersistentSettings: tests', function () {
       expect(setState.called).to.be.true;
     });
 
-    it('the settings status does not get updated if no status is provided', function () {
+    it('the settings status does not get updated if no status is provided', function (): void {
       const stateMock: IState = {
         version: persistentSettings.getSettings().extensionSettings.version
       };
@@ -129,14 +129,14 @@ describe('PersistentSettings: tests', function () {
       expect(state.version).to.be.equal(stateMock.version);
     });
 
-    it('the settings file gets deleted', function () {
+    it('the settings file gets deleted', function (): void {
       const deleteFile = sandbox.stub(fs, 'unlinkSync');
       persistentSettings.deleteState();
       expect(deleteFile.called).to.be.true;
     });
 
-    context('getting the state', function () {
-      it('returns the state from the settings file', function () {
+    context('getting the state', function (): void {
+      it('returns the state from the settings file', function (): void {
         const stateMock: IState = {
           version: '1.0.0'
         };
@@ -148,15 +148,15 @@ describe('PersistentSettings: tests', function () {
         expect(Object.keys(state)).to.have.lengthOf(1);
       });
 
-      context('returns a default state when', function () {
-        it('no settings file exists', function () {
+      context('returns a default state when', function (): void {
+        it('no settings file exists', function (): void {
           sandbox.stub(fs, 'existsSync').returns(false);
           const state = persistentSettings.getState();
           expect(state).to.be.instanceOf(Object);
           expect(state.version).to.be.equal('0.0.0');
         });
 
-        it('reading the file fails', function () {
+        it('reading the file fails', function (): void {
           sandbox.stub(fs, 'existsSync').returns(true);
           sandbox.stub(fs, 'readFileSync').throws(Error);
           sandbox.stub(console, 'error');
@@ -165,7 +165,7 @@ describe('PersistentSettings: tests', function () {
           expect(state.version).to.be.equal('0.0.0');
         });
 
-        it('parsing the file content fails', function () {
+        it('parsing the file content fails', function (): void {
           sandbox.stub(fs, 'existsSync').returns(true);
           sandbox.stub(fs, 'readFileSync').returns('test');
           const state = persistentSettings.getState();
@@ -175,10 +175,10 @@ describe('PersistentSettings: tests', function () {
       });
     });
 
-    context('the `isNewVersion` function is', function () {
-      it('truthy for a new extension version', function () {
+    context('the `isNewVersion` function is', function (): void {
+      it('truthy for a new extension version', function (): void {
         const stateMock: IState = {
-          version: '0.0.0'
+          version: '0.0.1'
         };
         const getState = sinon
           .stub(persistentSettings, 'getState')
@@ -188,7 +188,7 @@ describe('PersistentSettings: tests', function () {
         expect(getState.called).to.be.true;
       });
 
-      it('falsy for the same extension version', function () {
+      it('falsy for the same extension version', function (): void {
         const stateMock: IState = {
           version: persistentSettings.getSettings().extensionSettings.version
         };
@@ -200,7 +200,7 @@ describe('PersistentSettings: tests', function () {
         expect(getState.called).to.be.true;
       });
 
-      it('falsy for an older extension version', function () {
+      it('falsy for an older extension version', function (): void {
         const stateMock: IState = {
           version: '100.0.0'
         };
@@ -209,6 +209,68 @@ describe('PersistentSettings: tests', function () {
           .returns(stateMock);
         persistentSettings.getSettings();
         expect(persistentSettings.isNewVersion()).to.be.false;
+        expect(getState.called).to.be.true;
+      });
+
+      it('falsy for a first install', function (): void {
+        const stateMock: IState = {
+          version: '0.0.0'
+        };
+        const getState = sinon
+          .stub(persistentSettings, 'getState')
+          .returns(stateMock);
+        persistentSettings.getSettings();
+        expect(persistentSettings.isNewVersion()).to.be.false;
+        expect(getState.called).to.be.true;
+      });
+    });
+
+    context('the `isFirstInstall` function is', function (): void {
+      it('truthy for a new installation (from 0.0.0)', function (): void {
+        const stateMock: IState = {
+          version: '0.0.0'
+        };
+        const getState = sinon
+          .stub(persistentSettings, 'getState')
+          .returns(stateMock);
+        persistentSettings.getSettings();
+        expect(persistentSettings.isFirstInstall()).to.be.true;
+        expect(getState.called).to.be.true;
+      });
+
+      it('falsy for a new extension version', function (): void {
+        const stateMock: IState = {
+          version: '0.0.1'
+        };
+        const getState = sinon
+          .stub(persistentSettings, 'getState')
+          .returns(stateMock);
+        persistentSettings.getSettings();
+        expect(persistentSettings.isFirstInstall()).to.be.false;
+        expect(getState.called).to.be.true;
+      });
+
+      it('falsy for the same extension version', function (): void {
+        const stateMock: IState = {
+          version: persistentSettings.getSettings().extensionSettings.version
+        };
+        const getState = sinon
+          .stub(persistentSettings, 'getState')
+          .returns(stateMock);
+        persistentSettings.getSettings();
+        expect(persistentSettings.isFirstInstall()).to.be.false;
+        expect(getState.called).to.be.true;
+      });
+
+      it('falsy for an older extension version', function (): void {
+        const stateMock: IState = {
+          version: '100.0.0'
+        };
+        const getState = sinon
+          .stub(persistentSettings, 'getState')
+          .returns(stateMock);
+        persistentSettings.getSettings();
+        expect(persistentSettings.isFirstInstall()).to.be.false;
         expect(getState.called).to.be.true;
       });
     });
