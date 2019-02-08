@@ -8,6 +8,10 @@
   "license": "Apache-2.0",
   "author": "Mattia Astorino [@equinusocio]",
   "icon": "logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/equinusocio/vsc-material-theme-icons.git"
+  },
   "galleryBanner": {
     "color": "#11131C",
     "theme": "dark"

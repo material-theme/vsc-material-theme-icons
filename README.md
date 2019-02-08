@@ -1,5 +1,8 @@
+<p align="center"><img width="800px" src="https://i.ibb.co/8KL8d16/mti.jpg"></p>
+<p align="center">
 <a href="https://code.visualstudio.com/updates/v1_25"><img src="https://vsmarketplacebadge.apphb.com/rating-star/Equinusocio.vsc-material-theme-icons.svg?style=for-the-badge&colorA=FBBD30&colorB=F2AA08"/></a> <a href="https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons"><img src="https://vsmarketplacebadge.apphb.com/installs-short/Equinusocio.vsc-material-theme-icons.svg?style=for-the-badge&colorA=5DDB61&colorB=4BC74F&label=DOWNLOADS"/></a>
 <a href="https://a.paddle.com/v2/click/16413/37697?link=1227"><img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20Course%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a>
+</p>
 
 The most epic file icon theme for Visual Studio Code. This icon theme is made to be used with [Material Theme for Vscode](https://material-theme.site/) for an immersive experience.
 
