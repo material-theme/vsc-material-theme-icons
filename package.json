@@ -76,7 +76,7 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "yarn build",
     "precompile": "yarn cleanup",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
