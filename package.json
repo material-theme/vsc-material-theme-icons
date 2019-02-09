@@ -76,7 +76,7 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "yarn build",
     "precompile": "yarn cleanup",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
@@ -97,7 +97,7 @@
     "@types/mocha": "5.2.5",
     "@types/mustache": "0.8.32",
     "@types/ncp": "2.0.1",
-    "@types/node": "10.12.23",
+    "@types/node": "10.12.24",
     "@types/rimraf": "2.0.2",
     "@types/semver": "5.5.0",
     "@types/sinon": "7.0.5",
