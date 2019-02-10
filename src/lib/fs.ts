@@ -22,4 +22,4 @@ export const getIconsVariantJson = (path: string): IThemeIconsJSON =>
  require(join(PATHS.rootDir, path));
 
 export const getAbsolutePath = (input: string): string =>
-  join(PATHS.extensionDir, input);
+  join(PATHS.rootDir, input);
