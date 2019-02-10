@@ -26,7 +26,6 @@ export default (): Promise<void> => {
   // For each Material Theme variant colours
   for (const variantName of Object.keys(themeVariantsColours)) {
     for (const contribute of PACKAGE_JSON.contributes.iconThemes) {
-      console.log('Icons theme', contribute.path);
       const regexpCheck: RegExp = new RegExp(Object.keys(themeVariantsColours).join('|'), 'i');
       if (regexpCheck.test(contribute.path) || regexpCheck.test(contribute.id)) {
         continue;
