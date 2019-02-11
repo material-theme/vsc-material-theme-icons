@@ -5,3 +5,4 @@ node_modules
 src/icons/svgs
 coverage/
 .nyc_output/
+_tmp-output-remote-icons
