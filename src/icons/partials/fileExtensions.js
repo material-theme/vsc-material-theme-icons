@@ -47,6 +47,7 @@
   "sublime-commands": "_file_sublime",
   "sublime-menu": "_file_sublime",
   "html": "_file_html",
+  "lit": "_file_html",
   "jade": "_file_pug",
   "pug": "_file_pug",
   "md": "_file_markdown",
