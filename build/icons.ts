@@ -14,7 +14,6 @@ const ensureDir = (dirname: string): void =>
  * Returns an object implementing the IIcon interface
  */
 const iconFactory = (fileName: string): IIcon => {
-  console.log(`Processing icon ${ fileName }`);
   let name: string = path.basename(fileName, path.extname(fileName));
   const filename: string = name;
   const last = false;
@@ -26,8 +25,6 @@ const iconFactory = (fileName: string): IIcon => {
   name = name.indexOf('folder') ?
     name.indexOf('file') ? `_file_${ name }` : `_${ name }` :
     name = `_${ name }`;
-
-  console.log(`VSCode icon name ${ name } with filename ${ filename }`);
 
   return {filename, name, last};
 };
@@ -43,7 +40,6 @@ export default (): Promise<void> => {
   icons[icons.length - 1].last = true;
 
   for (const partial of partials) {
-    console.log('Partial: ', partial);
     partialsData[path.basename(partial, path.extname(partial))] = fs.readFileSync(
       path.join(PATHS.srcPartials, `./${partial}`), 'utf-8');
   }
@@ -57,8 +53,5 @@ export default (): Promise<void> => {
   contents = JSON.stringify(JSON.parse(contents), undefined, 2);
 
   fs.writeFileSync(PATHS.tmpPathIcons, contents, {encoding: 'utf-8'});
-  console.log('----------');
-  console.log('Icons generated!', PATHS.tmpPathIcons);
-  console.log('----------');
   return Promise.resolve();
 };
