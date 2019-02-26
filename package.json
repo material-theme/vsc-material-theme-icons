@@ -98,7 +98,7 @@
     "@types/mustache": "0.8.32",
     "@types/ncp": "2.0.1",
     "@types/node": "11.9.5",
-    "@types/ora": "3.0.0",
+    "@types/ora": "3.1.0",
     "@types/rimraf": "2.0.2",
     "@types/semver": "5.5.0",
     "@types/sinon": "7.0.6",
