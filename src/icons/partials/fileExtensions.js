@@ -1,4 +1,5 @@
 "fileExtensions": {
+  "svelte": "_file_svelte",
   "tf": "_file_terraform",
   "story.tsx": "_file_storybook",
   "stories.tsx": "_file_storybook",
