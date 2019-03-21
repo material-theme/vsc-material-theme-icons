@@ -3211,9 +3211,10 @@ tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 
-tslint-consistent-codestyle@^1.15.0:
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/tslint-consistent-codestyle/-/tslint-consistent-codestyle-1.15.0.tgz#a3acf8d0a3ca0dc7d1285705102ba1fe4a17c4cb"
+tslint-consistent-codestyle@^1.15.1:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/tslint-consistent-codestyle/-/tslint-consistent-codestyle-1.15.1.tgz#a0c5cd5a5860d40b659c490d8013c5732e02af8c"
+  integrity sha512-38Y3Dz4zcABe/PlPAQSGNEWPGVq0OzcIQR7SEU6dNujp/SgvhxhJOhIhI9gY4r0I3/TNtvVQwARWor9O9LPZWg==
   dependencies:
     "@fimbul/bifrost" "^0.17.0"
     tslib "^1.7.1"
@@ -3227,20 +3228,21 @@ tslint-eslint-rules@^5.4.0:
     tslib "1.9.0"
     tsutils "^3.0.0"
 
-tslint-microsoft-contrib@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/tslint-microsoft-contrib/-/tslint-microsoft-contrib-6.0.0.tgz#7bff73c9ad7a0b7eb5cdb04906de58f42a2bf7a2"
+tslint-microsoft-contrib@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/tslint-microsoft-contrib/-/tslint-microsoft-contrib-6.1.0.tgz#cc487575f2cdb8fe3774bf3f2ba61ff61dc7856e"
+  integrity sha512-8DgmiPTgNQSYTjrKKv/h1aHnDd7EkGAjTxatrjfSDp5jUXENGI7Qj7qi7T8xBdTZN9Z3nb80u0NhdBBOMcQFHg==
   dependencies:
     tsutils "^2.27.2 <2.29.0"
 
-tslint-xo@0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/tslint-xo/-/tslint-xo-0.15.0.tgz#27ca62c1dc6cf57259b195deecef189e5dee4aea"
-  integrity sha512-912Tr4S2Fs+5FhB92eKsmAZ9TaxJgqYAetrRbQ6acUyYT9Bn2mxeTuIqmvw8cjMDUOfH3fm2evQ23kXs6uaqvg==
+tslint-xo@0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/tslint-xo/-/tslint-xo-0.16.0.tgz#335cf2eeff9d4a600aeccc6e22476a19617c4c52"
+  integrity sha512-n0kE/kpPJqh3zzKheP5kYrsGT2axFfP4ppXsxYXZbqtGJivdaL40rKukkW1/16R67WgjlcoyTxkHh+zLikkawg==
   dependencies:
-    tslint-consistent-codestyle "^1.15.0"
+    tslint-consistent-codestyle "^1.15.1"
     tslint-eslint-rules "^5.4.0"
-    tslint-microsoft-contrib "^6.0.0"
+    tslint-microsoft-contrib "^6.1.0"
 
 tslint@5.12.1:
   version "5.12.1"
