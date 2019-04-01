@@ -100,7 +100,7 @@
     "@types/node": "11.11.8",
     "@types/ora": "3.1.0",
     "@types/rimraf": "2.0.2",
-    "@types/semver": "5.5.0",
+    "@types/semver": "6.0.0",
     "@types/sinon": "7.0.10",
     "chai": "4.2.0",
     "codecov": "3.2.0",
