@@ -207,10 +207,10 @@
   version "10.12.23"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.23.tgz#308a3acdc5d1c842aeadc50b867d99c46cfae868"
 
-"@types/node@11.11.8":
-  version "11.11.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.8.tgz#ff5e4e7896549e5725cf88d711e8c003984b2413"
-  integrity sha512-87dYasmW2iLSYNTc3WU85taIQb1RBz6KK9w/Hnbkyu3n9xeNd0fbVaPoGMyX1ErGB8PaqNuCtYjpoI9aN6DoCg==
+"@types/node@11.13.2":
+  version "11.13.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.2.tgz#dc85dde46aa8740bb4aed54b8104250f8f849503"
+  integrity sha512-HOtU5KqROKT7qX/itKHuTtt5fV0iXbheQvrgbLNXFJQBY/eh+VS5vmmTAVlo3qIGMsypm0G4N1t2AXjy1ZicaQ==
 
 "@types/ora@3.1.0":
   version "3.1.0"
