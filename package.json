@@ -103,7 +103,7 @@
     "@types/semver": "6.0.0",
     "@types/sinon": "7.0.11",
     "chai": "4.2.0",
-    "codecov": "3.3.0",
+    "codecov": "3.4.0",
     "execa": "1.0.0",
     "json-minify": "1.0.0",
     "mocha": "6.0.2",
