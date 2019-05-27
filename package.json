@@ -93,25 +93,25 @@
     "@types/mocha": "5.2.6",
     "@types/mustache": "0.8.32",
     "@types/ncp": "2.0.1",
-    "@types/node": "11.10.5",
+    "@types/node": "11.13.8",
     "@types/ora": "3.1.0",
     "@types/rimraf": "2.0.2",
-    "@types/semver": "5.5.0",
-    "@types/sinon": "7.0.9",
+    "@types/semver": "6.0.0",
+    "@types/sinon": "7.0.12",
     "chai": "4.2.0",
-    "codecov": "3.2.0",
+    "codecov": "3.3.0",
     "execa": "1.0.0",
     "json-minify": "1.0.0",
     "mocha": "6.0.2",
     "mustache": "3.0.1",
     "ncp": "2.0.0",
-    "nyc": "13.3.0",
+    "nyc": "14.0.0",
     "ora": "3.1.0",
     "rimraf": "2.6.3",
-    "sinon": "7.2.7",
-    "svgo": "1.2.0",
+    "sinon": "7.3.2",
+    "svgo": "1.2.2",
     "tslint": "5.12.1",
-    "tslint-xo": "0.15.0",
+    "tslint-xo": "0.16.0",
     "typescript": "3.3.1",
     "vscode": "1.1.30"
   },
@@ -128,6 +128,6 @@
     }
   ],
   "dependencies": {
-    "semver": "5.6.0"
+    "semver": "6.0.0"
   }
 }
