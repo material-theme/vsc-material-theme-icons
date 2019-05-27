@@ -7,6 +7,9 @@
   "license": "Apache-2.0",
   "author": "Mattia Astorino [@equinusocio]",
   "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/equinusocio/vsc-material-theme-icons.git"
