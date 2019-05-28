@@ -20,7 +20,6 @@
   "accentableIcons": [
     "_folder_open",
     "_folder_root_open",
-    "_folder_open_build",
     "_folder_vscode_open",
     "_folder_gulp_open",
     "_folder_node_open",
@@ -145,17 +144,11 @@
         "_file_folder": {
           "iconPath": "../icons/file_folder.svg"
         },
-        "_file_folder_build": {
-          "iconPath": "../icons/file_folder_build.svg"
-        },
         "_folder_open": {
           "iconPath": "../icons/folder_open.svg"
         },
         "_folder_root_open": {
           "iconPath": "../icons/folder_root_open.svg"
-        },
-        "_folder_open_build": {
-          "iconPath": "../icons/folder_open_build.svg"
         }
       }
     }
