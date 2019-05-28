@@ -102,13 +102,13 @@
     "@types/semver": "6.0.0",
     "@types/sinon": "7.0.12",
     "chai": "4.2.0",
-    "codecov": "3.3.0",
+    "codecov": "3.4.0",
     "execa": "1.0.0",
     "json-minify": "1.0.0",
     "mocha": "6.0.2",
     "mustache": "3.0.1",
     "ncp": "2.0.0",
-    "nyc": "14.0.0",
+    "nyc": "14.1.0",
     "ora": "3.1.0",
     "rimraf": "2.6.3",
     "sinon": "7.3.2",
@@ -131,6 +131,6 @@
     }
   ],
   "dependencies": {
-    "semver": "6.0.0"
+    "semver": "6.1.0"
   }
 }
