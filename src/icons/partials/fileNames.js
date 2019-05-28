@@ -111,6 +111,7 @@
   ".yarnclean": "_file_yarn",
   ".yarn-integrity": "_file_yarn",
   "yarn-error.log": "_file_yarn",
+  "cargo.lock": "_file_cargo-lock",
   "contributing.md": "_file_contributing",
   "contributing.md.rendered": "_file_contributing",
   "readme.md": "_file_readme",
