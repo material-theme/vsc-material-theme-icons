@@ -131,6 +131,6 @@
     }
   ],
   "dependencies": {
-    "semver": "6.1.0"
+    "semver": "6.1.2"
   }
 }
