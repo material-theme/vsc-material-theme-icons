@@ -16,7 +16,7 @@ const pRm = (dir: string): Promise<void> => new Promise((resolve, reject): void 
  * Get remote Material Icons
  */
 export default async (): Promise<void> => {
-  const src = 'git@github.com:material-theme/vsc-material-theme-icons-src.git';
+  const src = 'git@github.com:equinusocio/vsc-material-theme-icons-src.git';
   const tmpDest = './_tmp-output-remote-icons';
   const dest = './src/icons/svgs';
 
