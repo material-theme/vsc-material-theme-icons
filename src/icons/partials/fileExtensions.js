@@ -1,4 +1,6 @@
 "fileExtensions": {
+  "njk": "_file_nunjucks",
+  "ipynb": "_file_jupyter",
   "svelte": "_file_svelte",
   "tf": "_file_terraform",
   "story.tsx": "_file_storybook",

@@ -1,4 +1,6 @@
 "fileNames": {
+  "Pipefile": "_file_pipfile",
+  "Pipefile.lock": "_file_pipfile-lock",
   "nuxt.config.js": "_file_nuxtconfig",
   "vue.config.js": "_file_vue",
   ".browserslistrc": "_file_browserlist",
