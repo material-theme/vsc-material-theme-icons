@@ -130,6 +130,6 @@
     }
   ],
   "dependencies": {
-    "semver": "6.1.2"
+    "semver": "7.1.1"
   }
 }
