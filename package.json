@@ -91,7 +91,7 @@
   },
   "devDependencies": {
     "@types/chai": "4.1.7",
-    "@types/execa": "0.9.0",
+    "@types/execa": "2.0.0",
     "@types/mocha": "5.2.7",
     "@types/mustache": "0.8.32",
     "@types/ncp": "2.0.1",
