@@ -3,17 +3,17 @@ import * as vscode from 'vscode';
 
 import fixIcons from './commands/fix-icons';
 import Settings from './lib/persistent-settings';
-import {installationMessage, changelogMessage} from './lib/messages';
-import {openMaterialThemeExt, getCurrentThemeID} from './lib/vscode';
+import {changelogMessage} from './lib/messages';
+import {getCurrentThemeID} from './lib/vscode';
 import {isMaterialTheme} from './lib/material-theme';
 
 export async function activate(context: vscode.ExtensionContext): Promise<void> {
     const settings = new Settings(vscode);
     const materialThemeInstalled = await isMaterialTheme(await getCurrentThemeID());
 
-    if (settings.isFirstInstall() && !materialThemeInstalled && await installationMessage()) {
-        await openMaterialThemeExt();
-    }
+    // if (settings.isFirstInstall() && !materialThemeInstalled && await installationMessage()) {
+    //     await openMaterialThemeExt();
+    // }
 
     // TODO implement show changelog
     // if (settings.isNewVersion() && await changelogMessage()) {
