@@ -4,12 +4,10 @@ import * as vscode from 'vscode';
 import fixIcons from './commands/fix-icons';
 import Settings from './lib/persistent-settings';
 import {changelogMessage} from './lib/messages';
-import {getCurrentThemeID} from './lib/vscode';
-import {isMaterialTheme} from './lib/material-theme';
 
 export async function activate(context: vscode.ExtensionContext): Promise<void> {
     const settings = new Settings(vscode);
-    const materialThemeInstalled = await isMaterialTheme(await getCurrentThemeID());
+    // const materialThemeInstalled = await isMaterialTheme(await getCurrentThemeID());
 
     // if (settings.isFirstInstall() && !materialThemeInstalled && await installationMessage()) {
     //     await openMaterialThemeExt();
