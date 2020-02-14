@@ -2,17 +2,21 @@
 // tslint:disable only-arrow-functions
 // tslint:disable no-unused-expression
 import * as fs from 'fs';
+import * as os from 'os';
+import * as path from 'path';
 import {expect} from 'chai';
 import * as sinon from 'sinon';
 import {vscode} from '../utils';
 import PersistentSettings from '../../src/lib/persistent-settings';
 import {IState} from '../../typings/interfaces/persistent-settings';
 
+const globalStoragePath = path.join(os.tmpdir(), 'vsc-material-theme');
+
 describe('PersistentSettings: tests', function (): void {
   context('ensures that', function (): void {
     context('getting the settings', function (): void {
       it('more than once, returns the same instance', function (): void {
-        const persistentSettings = new PersistentSettings(vscode);
+        const persistentSettings = new PersistentSettings(vscode, globalStoragePath);
         const settings = persistentSettings.getSettings();
         const settingsAgain = persistentSettings.getSettings();
         expect(settings).to.be.an.instanceOf(Object);
@@ -20,20 +24,10 @@ describe('PersistentSettings: tests', function (): void {
         expect(settingsAgain).to.be.deep.equal(settings);
       });
 
-      it('detects correctly if it is in portable mode', function (): void {
-        const sandbox = sinon
-          .createSandbox()
-          .stub(process, 'env')
-          .value({VSCODE_PORTABLE: '/PathToPortableInstallationDir/data'});
-        const settings = new PersistentSettings(vscode).getSettings();
-        expect(settings.vscodeAppUserPath).to.match(/user-data/);
-        sandbox.restore();
-      });
-
       context('returns the correct name when application is the', function (): void {
         it('`Code - Insiders`', function (): void {
           vscode.env.appName = 'Visual Studio Code - Insiders';
-          const settings = new PersistentSettings(vscode).getSettings();
+          const settings = new PersistentSettings(vscode, globalStoragePath).getSettings();
           expect(settings.isInsiders).to.be.true;
           expect(settings.isOSS).to.be.false;
           expect(settings.isDev).to.be.false;
@@ -41,7 +35,7 @@ describe('PersistentSettings: tests', function (): void {
 
         it('`Code`', function (): void {
           vscode.env.appName = 'Visual Studio Code';
-          const settings = new PersistentSettings(vscode).getSettings();
+          const settings = new PersistentSettings(vscode, globalStoragePath).getSettings();
           expect(settings.isInsiders).to.be.false;
           expect(settings.isOSS).to.be.false;
           expect(settings.isDev).to.be.false;
@@ -71,7 +65,7 @@ describe('PersistentSettings: tests', function (): void {
     let sandbox: sinon.SinonSandbox;
 
     beforeEach(() => {
-      persistentSettings = new PersistentSettings(vscode);
+      persistentSettings = new PersistentSettings(vscode, globalStoragePath);
       sandbox = sinon.createSandbox();
     });
 

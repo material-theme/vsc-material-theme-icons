@@ -1,7 +1,8 @@
 import {join} from 'path';
-import {existsSync, writeFileSync, unlinkSync} from 'fs';
+import {existsSync, writeFileSync, unlinkSync, mkdirSync} from 'fs';
 import {SemVer, lt} from 'semver';
 import * as os from 'os';
+import * as path from 'path';
 
 import {IPersistentSettings, ISettings, IExtensionSettings, IState} from '../../typings/interfaces/persistent-settings';
 import {IVSCode} from '../../typings/interfaces/vscode';
@@ -12,7 +13,7 @@ export default class PersistentSettings implements IPersistentSettings {
   private settings: ISettings;
   private defaultState: IState;
 
-  constructor(private vscode: IVSCode) {
+  constructor(private vscode: IVSCode, private globalStoragePath: string) {
     this.settings = this.getSettings();
     this.defaultState = {
       version: '0.0.0'
@@ -27,29 +28,46 @@ export default class PersistentSettings implements IPersistentSettings {
     const vscodeVersion = new SemVer(this.vscode.version).version;
     const isWin = /^win/.test(process.platform);
 
-    const vscodePath = this.vscodePath();
-    const vscodeAppName = this.vscodeAppName(isInsiders, isOSS, isDev);
-    const vscodeAppUserPath = join(vscodePath, vscodeAppName, 'User');
-    const persistentSettingsFilePath = join(vscodeAppUserPath, FILES.persistentSettings);
-
-    const {version} = getPackageJson();
+    const { version } = getPackageJson();
 
     const extensionSettings: IExtensionSettings = {
       version
     };
 
+    const persistentSettingsFilePath = path.join(this.globalStoragePath, 'settings.json')
     this.settings = {
       isDev,
       isOSS,
       isInsiders,
       isWin,
       vscodeVersion,
-      vscodeAppUserPath,
       persistentSettingsFilePath,
       extensionSettings
     };
 
+    if (!existsSync(this.globalStoragePath)) {
+      mkdirSync(this.globalStoragePath);
+    }
+
+    this.migrateOldPersistentSettings(isInsiders, isOSS, isDev);
+
     return this.settings;
+  }
+
+  getOldPersistentSettingsPath(isInsiders: boolean, isOSS: boolean, isDev: boolean): string {
+    const vscodePath = this.vscodePath();
+    const vscodeAppName = this.vscodeAppName(isInsiders, isOSS, isDev);
+    const vscodeAppUserPath = join(vscodePath, vscodeAppName, 'User');
+    return join(vscodeAppUserPath, FILES.persistentSettings);
+  }
+
+  migrateOldPersistentSettings(isInsiders: boolean, isOSS: boolean, isDev: boolean) {
+    const oldPersistentSettingsFilePath = this.getOldPersistentSettingsPath(isInsiders, isOSS, isDev);
+    if (existsSync(oldPersistentSettingsFilePath)) {
+      let oldState = require(oldPersistentSettingsFilePath) as IState;
+      this.setState(oldState);
+      unlinkSync(oldPersistentSettingsFilePath);
+    }
   }
 
   getState(): IState {
