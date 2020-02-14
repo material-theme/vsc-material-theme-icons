@@ -7,7 +7,6 @@ export interface ISettings {
   isInsiders: boolean;
   isOSS: boolean;
   isDev: boolean;
-  vscodeAppUserPath: string; // path to the vscode app user directory
   persistentSettingsFilePath: string;
   vscodeVersion: string;
   extensionSettings: IExtensionSettings;

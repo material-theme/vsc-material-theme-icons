@@ -6,7 +6,7 @@ import Settings from './lib/persistent-settings';
 import {changelogMessage} from './lib/messages';
 
 export async function activate(context: vscode.ExtensionContext): Promise<void> {
-    const settings = new Settings(vscode);
+    const settings = new Settings(vscode, context.globalStoragePath);
     // const materialThemeInstalled = await isMaterialTheme(await getCurrentThemeID());
 
     // if (settings.isFirstInstall() && !materialThemeInstalled && await installationMessage()) {
