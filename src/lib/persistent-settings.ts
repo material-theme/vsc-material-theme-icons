@@ -49,7 +49,7 @@ export default class PersistentSettings implements IPersistentSettings {
       mkdirSync(this.globalStoragePath);
     }
 
-    this.migratePersistentSettings(isInsiders, isOSS, isDev);
+    this.migrateOldPersistentSettings(isInsiders, isOSS, isDev);
 
     return this.settings;
   }
@@ -61,7 +61,7 @@ export default class PersistentSettings implements IPersistentSettings {
     return join(vscodeAppUserPath, FILES.persistentSettings);
   }
 
-  migratePersistentSettings(isInsiders: boolean, isOSS: boolean, isDev: boolean) {
+  migrateOldPersistentSettings(isInsiders: boolean, isOSS: boolean, isDev: boolean) {
     const oldPersistentSettingsFilePath = this.getOldPersistentSettingsPath(isInsiders, isOSS, isDev);
     if (existsSync(oldPersistentSettingsFilePath)) {
       let oldState = require(oldPersistentSettingsFilePath) as IState;
