@@ -83,7 +83,7 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "cleanup": "rimraf _tmp-output-remote-icons out",
-    "build": "yarn cleanup && tsc -p ./ && cp src/defaults.json out/src/ && node out/build/index.js",
+    "build": "yarn cleanup && tsc -p ./ && cp src/defaults.json out/src/ && node out/build/index.js --ignore-engines",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "lint": "tslint **/*.ts",
     "pretest": "rimraf ./.nyc_output ./coverage && yarn compile",
