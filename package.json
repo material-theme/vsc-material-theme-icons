@@ -91,7 +91,9 @@
     "test:travis": "yarn pretest && nyc -x '' mocha",
     "posttest:travis": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test:vs": "node ./node_modules/vscode/bin/test",
-    "release": "standard-version"
+    "release": "git pull && standard-version --release-as minor && git push --follow-tags",
+    "release:patch": "git pull && standard-version --release-as patch && git push --follow-tags",
+    "release:major": "git pull && standard-version --release-as major && git push --follow-tags"
   },
   "devDependencies": {
     "@types/chai": "4.1.7",
@@ -119,7 +121,8 @@
     "tslint": "5.12.1",
     "tslint-xo": "0.16.0",
     "typescript": "3.7.4",
-    "vscode": "1.1.35"
+    "vscode": "1.1.35",
+    "yarn": "1.22.10"
   },
   "badges": [
     {
