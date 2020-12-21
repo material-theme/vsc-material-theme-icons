@@ -91,8 +91,8 @@
     "test:travis": "yarn pretest && nyc -x '' mocha",
     "posttest:travis": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test:vs": "node ./node_modules/vscode/bin/test",
-    "release": "git pull && standard-version --release-as minor && git push --follow-tags",
-    "release:patch": "git pull && standard-version --release-as patch && git push --follow-tags",
+    "release": "git pull && standard-version --release-as patch && git push --follow-tags",
+    "release:minor": "git pull && standard-version --release-as minor && git push --follow-tags",
     "release:major": "git pull && standard-version --release-as major && git push --follow-tags"
   },
   "devDependencies": {
