@@ -59,5 +59,6 @@
   "vb": "_file_visualstudio",
   "xml": "_file_xml",
   "xsl": "_file_xml",
-  "yaml": "_file_yaml"
+  "yaml": "_file_yaml",
+  "dotenv": "_file_tune"
 },

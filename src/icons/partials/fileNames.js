@@ -81,6 +81,7 @@
   ".env.testing": "_file_tune",
   ".env.staging": "_file_tune",
   ".env.production": "_file_tune",
+  ".env.local": "_file_tune",
   "dockerfile": "_file_docker",
   "license": "_file_license",
   "license.md": "_file_license",
