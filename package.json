@@ -137,6 +137,7 @@
     }
   ],
   "dependencies": {
-    "semver": "6.1.2"
+    "semver": "6.1.2",
+    "standard-version": "9.0.0"
   }
 }
