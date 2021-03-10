@@ -3,6 +3,7 @@
   "Pipefile.lock": "_file_pipfile-lock",
   "nuxt.config.js": "_file_nuxtconfig",
   "vue.config.js": "_file_vue",
+  "tailwind.config.js": "_file_tailwind",
   ".browserslistrc": "_file_browserlist",
   ".nvmrc": "_file_node",
   ".graphqlconfig.yml": "_file_graphql",
