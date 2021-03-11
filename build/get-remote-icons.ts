@@ -1,12 +1,11 @@
 import * as path from 'path';
 import * as execa from 'execa';
 import * as rimraf from 'rimraf';
-import {ncp} from 'ncp';
+import * as cpy from 'cpy';
 
-const pCopy = (src: string, dest: string): Promise<void> =>
-  new Promise((resolve, reject): void =>
-    ncp(src, dest, err => err ? reject(err) : resolve())
-  );
+const pCopy = async (src: string, dest: string): Promise<void> => {
+  await cpy(src, dest)
+}
 
 const pRm = (dir: string): Promise<void> => new Promise((resolve, reject): void =>
   rimraf(dir, (err: any) => err ? reject(err) : resolve())
