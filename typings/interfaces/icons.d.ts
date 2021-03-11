@@ -75,7 +75,6 @@ export interface IThemeIconsJSON {
     _file_arduino: IThemeIconsIconPath;
     _file_assembly: IThemeIconsIconPath;
     _file_autohotkey: IThemeIconsIconPath;
-    _file_bower: IThemeIconsIconPath;
     _file_c: IThemeIconsIconPath;
     _file_certificate: IThemeIconsIconPath;
     _file_changelog: IThemeIconsIconPath;
@@ -458,8 +457,6 @@ export interface IThemeIconsJSON {
   };
   fileNames: {
     'gruntfile.js': string;
-    'bower.json': string;
-    '.bowerrc': string;
     'webpack.js': string;
     'webpack.config.js': string;
     'webpack.dev.js': string;
@@ -536,7 +533,6 @@ export interface IThemeIconsJSON {
       '.git': string;
       '.github': string;
       '.gulp': string;
-      bower_components: string;
       build: string;
       dist: string;
     };
@@ -545,7 +541,6 @@ export interface IThemeIconsJSON {
       '.git': string;
       '.github': string;
       '.gulp': string;
-      bower_components: string;
       build: string;
       dist: string;
     };
@@ -555,7 +550,6 @@ export interface IThemeIconsJSON {
     '.git': string;
     '.github': string;
     '.gulp': string;
-    bower_components: string;
     build: string;
     dist: string;
   };
@@ -564,7 +558,6 @@ export interface IThemeIconsJSON {
     '.git': string;
     '.github': string;
     '.gulp': string;
-    bower_components: string;
     build: string;
     dist: string;
   };

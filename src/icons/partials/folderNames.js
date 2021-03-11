@@ -1,4 +1,5 @@
 "folderNames": {
+  "nginx": "_folder_nginx",
   "ci": "_folder_ci",
   "test": "_folder_test",
   "tests": "_folder_test",
@@ -6,7 +7,6 @@
   "__tests__": "_folder_test",
   "node_modules": "_folder_node",
   "assets": "_folder_assets",
-  "bower_components": "_folder_bower",
   "js": "_folder_js",
   "css": "_folder_css",
   "style": "_folder_style",
@@ -25,13 +25,13 @@
   "out": "_folder_dist"
 },
 "folderNamesExpanded": {
+  "nginx": "_folder_nginx_open",
   "ci": "_folder_ci_open",
   "test": "_folder_test_open",
   "tests": "_folder_test_open",
   "__test__": "_folder_test_open",
   "__tests__": "_folder_test_open",
   "node_modules": "_folder_node_open",
-  "bower_components": "_folder_bower_open",
   "assets": "_folder_assets_open",
   "src": "_folder_src_open",
   "source": "_folder_src_open",
@@ -48,4 +48,4 @@
   "build": "_folder_dist_open",
   "dist": "_folder_dist_open",
   "out": "_folder_dist_open"
-}
+},

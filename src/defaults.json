@@ -29,16 +29,22 @@
     "_folder_sass_open",
     "_folder_src_open",
     "_folder_assets_open",
-    "_folder_bower_open",
     "_folder_git_open",
     "_folder_github_open",
     "_folder_test_open",
     "_folder_dist_open",
-    "_folder_ci_open"
+    "_folder_ci_open",
+    "_folder_nginx_open"
   ],
   "icons": {
     "theme": {
       "iconDefinitions": {
+        "_folder_nginx": {
+          "iconPath": "../icons/folder_nginx.svg"
+        },
+        "_folder_nginx_open": {
+          "iconPath": "../icons/folder_nginx_open.svg"
+        },
         "_folder_sass": {
           "iconPath": "../icons/folder_sass.svg"
         },
@@ -80,12 +86,6 @@
         },
         "_folder_git_open": {
           "iconPath": "../icons/folder_git_open.svg"
-        },
-        "_folder_bower": {
-          "iconPath": "../icons/folder_bower.svg"
-        },
-        "_folder_bower_open": {
-          "iconPath": "../icons/folder_bower_open.svg"
         },
         "_folder_assets": {
           "iconPath": "../icons/folder_assets.svg"
@@ -172,6 +172,7 @@
     "Ocean High Contrast": "#474C60"
   },
   "variantsIcons": [
+    "_folder_nginx",
     "_folder_sass",
     "_folder_css",
     "_folder_ci",
@@ -179,7 +180,6 @@
     "_folder_test",
     "_folder_github",
     "_folder_git",
-    "_folder_bower",
     "_folder_assets",
     "_folder_src",
     "_folder_js",

@@ -363,5 +363,9 @@
   "yuv": "_file_movie",
   "zep": "_file_zephyr",
   "zip": "_file_zip",
-  "zsh": "_file_console"
-},
+  "zsh": "_file_console",
+  "test.jsx": "_file_test",
+  "test.js": "_file_test",
+  "test.tsx": "_file_test",
+  "test.ts": "_file_test"
+}

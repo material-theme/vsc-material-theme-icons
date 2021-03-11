@@ -32,8 +32,6 @@
   ".gitlab-ci.yml": "_file_gitlab",
   "gruntfile.js": "_file_grunt",
   "package-lock.json": "_file_package-lock",
-  "bower.json": "_file_bower",
-  ".bowerrc": "_file_bower",
   "webpack.js": "_file_webpack",
   "rollup.config.js": "_file_rollup",
   "rollup.config.ts": "file_rollup",
