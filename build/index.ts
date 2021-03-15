@@ -1,4 +1,3 @@
-import getRemoteIcons from './get-remote-icons';
 import minimizeIcons from './svgo';
 import buildIcons from './icons';
 import minimizeJson from './json-minify';
@@ -9,11 +8,7 @@ import * as ora from 'ora';
 
 const spinner = ora('Running build').start();
 
-getRemoteIcons()
-  .then(() => {
-    spinner.succeed('Got remote icons');
-    return minimizeIcons();
-  })
+minimizeIcons()
   .then(() => {
     spinner.succeed('Icon minimized');
     return buildIcons();

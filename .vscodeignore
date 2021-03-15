@@ -8,6 +8,7 @@
 assets/
 gulpfile.babel.ts
 out/test/**
+out/build/**
 src/**
 test/**
 tsconfig.json
