@@ -4,6 +4,14 @@
 <a href="https://a.paddle.com/v2/click/16413/37697?link=1227"><img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20Course%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a>
 </p>
 
+## Brought to you by
+
+<p><a title="Try CodeStream" href="https://sponsorlink.codestream.com/?utm_source=vscmarket&amp;utm_campaign=equin_material_icons&amp;utm_medium=banner"><img src="https://alt-images.codestream.com/codestream_logo_equin_material_icons.png"></a></br>
+Manage pull requests and conduct code reviews in your IDE with full source-tree context. Comment on any line, not just the diffs. Use jump-to-definition, your favorite keybindings, and code intelligence with more of your workflow.<br> <a title="Try CodeStream" href="https://sponsorlink.codestream.com/?utm_source=vscmarket&amp;utm_campaign=equin_material_icons&amp;utm_medium=banner">Learn More</a></p>
+
+---
+## Table of contents
+
 The most epic file icon theme for Visual Studio Code. This icon theme is made to be used with [Material Theme for Vscode](https://material-theme.site/) for an immersive experience.
 
 - [Getting started](#getting-started)
