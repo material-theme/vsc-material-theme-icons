@@ -40,7 +40,7 @@ jobs:
       - name: Build extension
         run: yarn build
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_REPO }}
 
       - uses: lannonbr/vsce-action@master
         with:

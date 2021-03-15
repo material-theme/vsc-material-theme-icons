@@ -44,4 +44,5 @@ getRemoteIcons()
   .catch(error => {
     spinner.fail('Build failed');
     console.error(error);
+    throw error;
   });
