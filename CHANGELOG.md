@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v1.2.2...v2.0.1) (2021-03-15)
+
+
+### Features
+
+* add tailwind config icon ([1a22434](https://github.com/material-theme/vsc-material-theme-icons/commit/1a224345522b40096b5507302d34800a01d6c49f))
+
 ### 1.2.1 (2020-12-21)
 
 
