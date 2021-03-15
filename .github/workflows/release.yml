@@ -39,6 +39,8 @@ jobs:
 
       - name: Build extension
         run: yarn build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: lannonbr/vsce-action@master
         with:
