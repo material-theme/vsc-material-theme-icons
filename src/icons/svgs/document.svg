@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="document">
+<path id="Rectangle" d="M4 3H9L11 4L12 6V13H4V3Z" fill="#A9B4CB"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M9 2C9.26522 2 9.51957 2.10536 9.70711 2.29289L12.7071 5.29289C12.8946 5.48043 13 5.73478 13 6V12C13 12.5304 12.7893 13.0391 12.4142 13.4142C12.0391 13.7893 11.5304 14 11 14H5C4.46957 14 3.96086 13.7893 3.58579 13.4142C3.21071 13.0391 3 12.5304 3 12V4C3 3.46957 3.21071 2.96086 3.58579 2.58579C3.96086 2.21071 4.46957 2 5 2H9ZM12 6V12C12 12.2652 11.8946 12.5196 11.7071 12.7071C11.5196 12.8946 11.2652 13 11 13H5C4.73478 13 4.48043 12.8946 4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12V4C4 3.73478 4.10536 3.48043 4.29289 3.29289C4.48043 3.10536 4.73478 3 5 3H9L12 6Z" fill="#A9B4CB"/>
+<path id="Vector" d="M9 3V6H12" fill="#F5F7F9"/>
+<path id="Vector_2" d="M10 8.5H6" stroke="#434F65" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M10 10.5H6" stroke="#434F65" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M7 6.5H6.5H6" stroke="#252D3A" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

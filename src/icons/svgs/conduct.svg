@@ -1,0 +1,8 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="conduct">
+<g id="todo">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M2.5 2H12.5C12.7765 2 13 2.224 13 2.5V13.5C13 13.776 12.7765 14 12.5 14H2.5C2.2235 14 2 13.776 2 13.5V2.5C2 2.224 2.2235 2 2.5 2ZM3.5 3.5V12.5H11.5V3.5H10V5H8.5C8.5 4.4475 8.0525 4 7.5 4C6.9475 4 6.5 4.4475 6.5 5H5V3.5H3.5Z" fill="#FFCB6B"/>
+<path id="Shape_2" d="M7 10.5C6.872 10.5 6.744 10.451 6.6465 10.3535L5.293 9L6 8.293L7 9.293L9 7.293L9.707 8L7.3535 10.3535C7.256 10.451 7.128 10.5 7 10.5Z" fill="#FF9CAC"/>
+</g>
+</g>
+</svg>

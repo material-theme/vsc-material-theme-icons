@@ -1,0 +1,7 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="virtual">
+<g id="desktop-screen">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M2.5 2.5H13.5C13.776 2.5 14 2.724 14 3V11C14 11.276 13.776 11.5 13.5 11.5H9V12.5H11C11.276 12.5 11.5 12.724 11.5 13C11.5 13.276 11.276 13.5 11 13.5H5C4.724 13.5 4.5 13.276 4.5 13C4.5 12.724 4.724 12.5 5 12.5H7V11.5H2.5C2.224 11.5 2 11.276 2 11V3C2 2.724 2.224 2.5 2.5 2.5ZM3 10.5H13V3.5H3V10.5Z" fill="#B2CCD6"/>
+</g>
+</g>
+</svg>

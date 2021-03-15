@@ -1,0 +1,9 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cmd">
+<g id="window-code">
+<path id="Shape" d="M4 4V2.5H2.5C2.224 2.5 2 2.724 2 3V4H4Z" fill="#89DDFF"/>
+<path id="Shape_2" d="M14 4V3C14 2.724 13.776 2.5 13.5 2.5H5V4H14Z" fill="#89DDFF"/>
+<path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M2 5V13C2 13.276 2.224 13.5 2.5 13.5H13.5C13.776 13.5 14 13.276 14 13V5H2ZM6.3535 9.3535L4.5 11.207L3.793 10.5L5.293 9L3.793 7.5L4.5 6.793L6.3535 8.6465C6.549 8.842 6.549 9.158 6.3535 9.3535ZM7.5 11H10.5V10H7.5V11Z" fill="#3965BD"/>
+</g>
+</g>
+</svg>

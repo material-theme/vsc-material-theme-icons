@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="sketch">
+<g id="Group">
+<path id="Bottom right" fill-rule="evenodd" clip-rule="evenodd" d="M11.2269 6.56696H13.4435L8 12.9879L11.2269 6.56696Z" fill="#E2AC1D"/>
+<path id="Bottom left" fill-rule="evenodd" clip-rule="evenodd" d="M4.7731 6.56699H2.55652L8.00002 12.9895L4.7731 6.56699Z" fill="#E2AC1D"/>
+<path id="Bottom center" fill-rule="evenodd" clip-rule="evenodd" d="M4.77313 6.56708L11.2263 6.56873L8.0002 12.9889L4.77313 6.56708Z" fill="#FFCB6B"/>
+<path id="Top rigth" fill-rule="evenodd" clip-rule="evenodd" d="M11.0509 3.33408L11.2272 6.56685L8.00879 3.00003L11.0509 3.33408Z" fill="#F2C140"/>
+<path id="Right" fill-rule="evenodd" clip-rule="evenodd" d="M11.0509 3.33408L11.2272 6.56685H13.4435L11.0509 3.33408Z" fill="#F3D791"/>
+<path id="Left" fill-rule="evenodd" clip-rule="evenodd" d="M4.94908 3.33403L4.7728 6.5668H2.55655L4.94908 3.33403Z" fill="#F3D791"/>
+<path id="Top let" fill-rule="evenodd" clip-rule="evenodd" d="M4.94971 3.33365L4.77344 6.56642L8.00858 3L4.94971 3.33365Z" fill="#F2C140"/>
+<path id="Top center" fill-rule="evenodd" clip-rule="evenodd" d="M4.7735 6.56685H11.2267L8.00852 3.00003L4.7735 6.56685Z" fill="#FCF5E3"/>
+</g>
+</g>
+</svg>

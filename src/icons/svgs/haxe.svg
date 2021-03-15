@@ -1,0 +1,19 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="haxe">
+<g id="haxe_2">
+<rect id="Rectangle-path" x="4.25" y="4.25" width="7.5" height="7.5" fill="#FFCB6B"/>
+<path id="Shape" d="M3 3L3.3125 5.5L4.25 8L8 4.25L5.5 3.3125L3 3Z" fill="#F78C6C"/>
+<path id="Shape_2" d="M3 13L5.5 12.6875L8 11.75L4.25 8L3.3125 10.5L3 13Z" fill="#F78C6C"/>
+<path id="Shape_3" d="M13 13L12.6875 10.5L11.75 8L8 11.75L10.5 12.6875L13 13Z" fill="#F78C6C"/>
+<path id="Shape_4" d="M13 3L10.5 3.3125L8 4.25L11.75 8L12.6875 5.5L13 3Z" fill="#F78C6C"/>
+<path id="Shape_5" d="M3 3L8 4.25L5.5 3H3Z" fill="#FFCB08"/>
+<path id="Shape_6" d="M3 3V5.5L4.25 8L3 3Z" fill="#FFF200"/>
+<path id="Shape_7" d="M3 13L4.25 8L3 10.5V13Z" fill="#FFF200"/>
+<path id="Shape_8" d="M3 13H5.5L8 11.75L3 13Z" fill="#F78C6C"/>
+<path id="Shape_9" d="M13 13L8 11.75L10.5 13H13Z" fill="#F7941E"/>
+<path id="Shape_10" d="M13 13V10.5L11.75 8L13 13Z" fill="#F15922"/>
+<path id="Shape_11" d="M13 3L11.75 8L13 5.5V3Z" fill="#F15922"/>
+<path id="Shape_12" d="M13 3H10.5L8 4.25L13 3Z" fill="#FFCB08"/>
+</g>
+</g>
+</svg>
