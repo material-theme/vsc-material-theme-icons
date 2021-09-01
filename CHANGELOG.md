@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.0.10...v2.1.0) (2021-09-01)
+
 ### [2.0.10](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.0.9...v2.0.10) (2021-03-15)
 
 ### [2.0.9](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.0.8...v2.0.9) (2021-03-15)
