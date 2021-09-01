@@ -4,9 +4,11 @@ import minimizeJson from './json-minify';
 import buildIconsAccents from './icons-accents';
 import buildIconsVariants from './icons-variants';
 import buildIconsVariantsJsons from './icons-variants-jsons';
-import * as ora from 'ora';
 
-const spinner = ora('Running build').start();
+const spinner = {
+  succeed: (message: string) => console.log(message),
+  fail: (message: string) => console.error(message)
+}
 
 minimizeIcons()
   .then(() => {
@@ -31,9 +33,6 @@ minimizeIcons()
   })
   .then(() => {
     spinner.succeed('Icons variants jsons built');
-    spinner.color = 'green';
-    spinner.text = 'Finished.';
-    spinner.stop();
     return Promise.resolve();
   })
   .catch(error => {
