@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.2.1...v2.3.0) (2022-05-04)
+
+
+### Features
+
+* add .nextjs.config.js support ([964f498](https://github.com/material-theme/vsc-material-theme-icons/commit/964f498932c695d0e577bed2de7b50e2dfb98832)), closes [#189](https://github.com/material-theme/vsc-material-theme-icons/issues/189)
+* add crystal support ([fd062e1](https://github.com/material-theme/vsc-material-theme-icons/commit/fd062e1fbb9349cf1d7d62da439bfcc91261327b)), closes [#190](https://github.com/material-theme/vsc-material-theme-icons/issues/190)
+* add prisma support. ([fa5a3eb](https://github.com/material-theme/vsc-material-theme-icons/commit/fa5a3ebfdce43c92f505167d14cfc4d5f5f9211e)), closes [#187](https://github.com/material-theme/vsc-material-theme-icons/issues/187)
+* add support for static folder ([af37885](https://github.com/material-theme/vsc-material-theme-icons/commit/af37885cf21814fdf1c474d6592610f7d779de0d)), closes [#194](https://github.com/material-theme/vsc-material-theme-icons/issues/194)
+
 ### [2.2.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.2.0...v2.2.1) (2021-10-05)
 
 
