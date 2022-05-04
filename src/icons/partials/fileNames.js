@@ -146,5 +146,7 @@
   "directive.js": "_file_angular-directive",
   "favicon.ico": "_file_favicon",
   "mix.lock": "_file_elixir-lock",
-  "now.json": "_file_now"
+  "now.json": "_file_now",
+  ".next.config.js": "_file_nextjs",
+  ".next.config.mjs": "_file_nextjs"
 },
