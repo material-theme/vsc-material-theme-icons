@@ -61,5 +61,9 @@
   "xml": "_file_xml",
   "xsl": "_file_xml",
   "yaml": "_file_yaml",
-  "dotenv": "_file_tune"
+  "dotenv": "_file_tune",
+  "crystal": "_file_crystal",
+  "crystal": "_file_crystal",
+  "ecr": "_file_crystal",
+  "slang": "_file_crystal"
 },

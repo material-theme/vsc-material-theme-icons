@@ -368,5 +368,8 @@
   "test.jsx": "_file_test",
   "test.js": "_file_test",
   "test.tsx": "_file_test",
-  "test.ts": "_file_test"
+  "test.ts": "_file_test",
+  "ecr": "_file_crystal",
+  "cr": "_file_crystal",
+  "slang": "_file_crystal"
 }
