@@ -27,7 +27,7 @@
     "Themes"
   ],
   "activationEvents": [
-    "*"
+    "onStartupFinished"
   ],
   "extensionKind": [
     "ui",
