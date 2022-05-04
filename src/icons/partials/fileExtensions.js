@@ -238,6 +238,7 @@
   "pptm": "_file_powerpoint",
   "pptx": "_file_powerpoint",
   "prefs": "_file_settings",
+  "prisma": "_file_prisma",
   "project": "_file_xml",
   "prop": "_file_settings",
   "properties": "_file_settings",

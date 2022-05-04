@@ -38,6 +38,7 @@
   "objective-c": "_file_matlab",
   "objective-cpp": "_file_cpp",
   "perl": "_file_perl",
+  "prisma": "_file_prisma",
   "perl6": "_file_perl",
   "php": "_file_php",
   "plaintext": "_file_document",
