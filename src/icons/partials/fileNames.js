@@ -148,5 +148,6 @@
   "mix.lock": "_file_elixir-lock",
   "now.json": "_file_now",
   "next.config.js": "_file_nextjs",
-  "next.config.mjs": "_file_nextjs"
+  "next.config.mjs": "_file_nextjs",
+  "wrangler.toml": "_file_cloudflare_workers"
 },
