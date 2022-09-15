@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.3.1...v2.4.0) (2022-09-15)
+
+
+### Features
+
+* add `.eslintrc.cjs` to eslint file names ([#207](https://github.com/material-theme/vsc-material-theme-icons/issues/207)) ([b0eb5c7](https://github.com/material-theme/vsc-material-theme-icons/commit/b0eb5c709fc612035cac28eab2c5a87c4c118e10))
+* add grpg folder icon ([1305cc8](https://github.com/material-theme/vsc-material-theme-icons/commit/1305cc8e8610ad1aefbb370f9f9d24727ef760e9)), closes [#196](https://github.com/material-theme/vsc-material-theme-icons/issues/196)
+* add odin file icon ([e2eabbd](https://github.com/material-theme/vsc-material-theme-icons/commit/e2eabbd0cb9afc1fd83484de6a6ad2b0354de7a9)), closes [#205](https://github.com/material-theme/vsc-material-theme-icons/issues/205)
+* add salesforce file icon ([7bb4434](https://github.com/material-theme/vsc-material-theme-icons/commit/7bb44344b00bb902ca3b21f151d28086fde93733)), closes [#206](https://github.com/material-theme/vsc-material-theme-icons/issues/206)
+* add wrangler file icon ([4922cc6](https://github.com/material-theme/vsc-material-theme-icons/commit/4922cc630831d6ad4d8c69995246feccf6d1d841)), closes [#201](https://github.com/material-theme/vsc-material-theme-icons/issues/201)
+
+
+### Bug Fixes
+
+* docker-compose now show the correct icon ([8c49a0e](https://github.com/material-theme/vsc-material-theme-icons/commit/8c49a0e5b7035431709103dbaabf437a80d2a65e))
+* update svelte icon ([bc79e4c](https://github.com/material-theme/vsc-material-theme-icons/commit/bc79e4ce4e2844e7ec0c0b707ed2df5f4ca1e6be)), closes [#202](https://github.com/material-theme/vsc-material-theme-icons/issues/202)
+
 ### [2.3.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.3.0...v2.3.1) (2022-05-04)
 
 
