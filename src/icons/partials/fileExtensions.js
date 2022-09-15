@@ -379,5 +379,6 @@
   "test.ts": "_file_test",
   "ecr": "_file_crystal",
   "cr": "_file_crystal",
-  "slang": "_file_crystal"
+  "slang": "_file_crystal",
+  "odin": "_file_odin"
 }
