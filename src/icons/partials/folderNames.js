@@ -24,7 +24,9 @@
   "gulp": "_folder_gulp",
   "build": "_folder_dist",
   "dist": "_folder_dist",
-  "out": "_folder_dist"
+  "out": "_folder_dist",
+  "grpc": "_folder_grpc",
+  "GRPC": "_folder_grpc"
 },
 "folderNamesExpanded": {
   "nginx": "_folder_nginx_open",
@@ -51,5 +53,7 @@
   ".vscode": "_folder_vscode_open",
   "build": "_folder_dist_open",
   "dist": "_folder_dist_open",
-  "out": "_folder_dist_open"
+  "out": "_folder_dist_open",
+  "grpc": "_folder_grpc_open",
+  "GRPC": "_folder_grpc_open"
 },
