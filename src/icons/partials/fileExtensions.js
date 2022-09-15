@@ -380,5 +380,7 @@
   "ecr": "_file_crystal",
   "cr": "_file_crystal",
   "slang": "_file_crystal",
-  "odin": "_file_odin"
+  "odin": "_file_odin",
+  "cls": "_file_salesforce",
+  "trigger": "_file_salesforce"
 }
