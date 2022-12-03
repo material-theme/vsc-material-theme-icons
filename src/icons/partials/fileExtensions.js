@@ -382,5 +382,6 @@
   "slang": "_file_crystal",
   "odin": "_file_odin",
   "cls": "_file_salesforce",
-  "trigger": "_file_salesforce"
+  "trigger": "_file_salesforce",
+  "nix": "_file_nix"
 }

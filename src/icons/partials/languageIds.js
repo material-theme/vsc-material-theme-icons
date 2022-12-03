@@ -67,5 +67,6 @@
   "ecr": "_file_crystal",
   "slang": "_file_crystal",
   "apex": "_file_salesforce",
-  "apex-anon": "_file_salesforce"
+  "apex-anon": "_file_salesforce",
+  "nix": "_file_nix"
 },
