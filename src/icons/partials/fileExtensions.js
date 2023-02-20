@@ -383,5 +383,6 @@
   "odin": "_file_odin",
   "cls": "_file_salesforce",
   "trigger": "_file_salesforce",
-  "nix": "_file_nix"
+  "nix": "_file_nix",
+  "vhdl": "_file_vhdl"
 }
