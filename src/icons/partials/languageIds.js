@@ -68,5 +68,6 @@
   "slang": "_file_crystal",
   "apex": "_file_salesforce",
   "apex-anon": "_file_salesforce",
+  "vhdl": "_file_vhdl",
   "nix": "_file_nix"
 },

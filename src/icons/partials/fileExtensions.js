@@ -384,5 +384,6 @@
   "cls": "_file_salesforce",
   "trigger": "_file_salesforce",
   "nix": "_file_nix",
+  "vhdl": "_file_vhdl",
   "wakatime": "_file_wakatime"
 }
