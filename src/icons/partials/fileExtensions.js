@@ -383,5 +383,6 @@
   "odin": "_file_odin",
   "cls": "_file_salesforce",
   "trigger": "_file_salesforce",
-  "nix": "_file_nix"
+  "nix": "_file_nix",
+  "wakatime": "_file_wakatime"
 }
