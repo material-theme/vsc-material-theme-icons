@@ -1,6 +1,5 @@
 <p align="center"><img width="800px" src="https://i.ibb.co/fdDRkWb/Frame.jpg"></p>
 <p align="center">
-<img src="https://vsmarketplacebadges.dev/rating-star/Equinusocio.vsc-material-theme-icons.svg?style=for-the-badge&colorA=FBBD30&colorB=F2AA08"/> <a href="https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons"><img src="https://vsmarketplacebadges.dev/installs-short/Equinusocio.vsc-material-theme-icons.svg?style=for-the-badge&colorA=5DDB61&colorB=4BC74F&label=DOWNLOADS"/></a>
 <a href="https://a.paddle.com/v2/click/16413/37697?link=1227"><img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20Course%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a>
 </p>
 
