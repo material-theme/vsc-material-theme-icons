@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.5.0...v2.6.0) (2023-02-27)
+
+
+### Features
+
+* add vhdl file icon ([6092dc6](https://github.com/material-theme/vsc-material-theme-icons/commit/6092dc66e6f057cb481ac72e05cfff5788d4744c)), closes [#214](https://github.com/material-theme/vsc-material-theme-icons/issues/214)
+* add wakatime file icon ([6f29f55](https://github.com/material-theme/vsc-material-theme-icons/commit/6f29f5522e55beed1580a2ddcc6ac55a8b6db9ea))
+
 ## [2.5.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.4.0...v2.5.0) (2022-12-03)
 
 
