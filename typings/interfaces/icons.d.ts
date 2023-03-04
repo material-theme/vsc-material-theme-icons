@@ -275,6 +275,7 @@ export interface IThemeIconsJSON {
     xls: string;
     csv: string;
     vscodeignore: string;
+    'vscodeignore-sync': string;
     vsixmanifest: string;
     suo: string;
     sln: string;
@@ -359,6 +360,7 @@ export interface IThemeIconsJSON {
     swift: string;
     ino: string;
     dockerignore: string;
+    'dockerignore-sync': string;
     tex: string;
     bib: string;
     pptx: string;
@@ -473,7 +475,9 @@ export interface IThemeIconsJSON {
     '.jscsrc': string;
     '.jshintrc': string;
     '.jshintignore': string;
+    '.jshintignore-sync': string;
     '.npmignore': string;
+    '.npmignore-sync': string;
     'tsconfig.json': string;
     'tslint.json': string;
     'androidmanifest.xml': string;
@@ -489,9 +493,11 @@ export interface IThemeIconsJSON {
     '.babelrc': string;
     '.eslintrc': string;
     '.buildignore': string;
+    '.buildignore-sync': string;
     '.htaccess': string;
     'composer.lock': string;
     '.gitignore': string;
+    '.gitignore-sync': string;
     '.gitconfig': string;
     '.gitattributes': string;
     '.gitmodules': string;
