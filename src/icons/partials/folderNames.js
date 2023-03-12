@@ -12,6 +12,7 @@
   "js": "_folder_js",
   "css": "_folder_css",
   "style": "_folder_style",
+  "styles": "_folder_style",
   "sass": "_folder_sass",
   "scss": "_folder_sass",
   "src": "_folder_src",
