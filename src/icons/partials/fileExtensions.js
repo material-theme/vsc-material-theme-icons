@@ -313,6 +313,7 @@
   "suit": "_file_font",
   "suo": "_file_visualstudio",
   "svelte": "_file_svelte",
+  "svelte.config.js": "_file_svelte",
   "svg": "_file_svg",
   "swc": "_file_swc",
   "swf": "_file_flash",
