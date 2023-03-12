@@ -46,6 +46,7 @@
   "js": "_folder_js_open",
   "css": "_folder_css_open",
   "style": "_folder_css_open",
+  "styles": "_folder_css_open",
   "sass": "_folder_sass_open",
   "scss": "_folder_scss_open",
   ".git": "_folder_git_open",
