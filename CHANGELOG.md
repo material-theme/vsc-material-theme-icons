@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.3](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.7.2...v2.7.3) (2023-03-17)
+
+
+### Bug Fixes
+
+* update readme ([827dcad](https://github.com/material-theme/vsc-material-theme-icons/commit/827dcad5366447790ac7442938521f6e9c5984f7))
+
 ### [2.7.2](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.7.1...v2.7.2) (2023-03-16)
 
 ### [2.7.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.7.0...v2.7.1) (2023-03-16)
