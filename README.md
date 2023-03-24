@@ -11,7 +11,7 @@ Manage pull requests and conduct code reviews in your IDE with full source-tree 
 ---
 ## Table of contents
 
-The most epic file icon theme for Visual Studio Code. This icon theme is made to be used with [Material Theme for Vscode](https://material-theme.site/) for an immersive experience.
+The most epic file icon theme for Visual Studio Code. This icon theme is made to be used with [Material Theme for Vscode](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme#review-details) for an immersive experience.
 
 - [Getting started](#getting-started)
   - [Installation](#installation)
