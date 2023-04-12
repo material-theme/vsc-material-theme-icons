@@ -1,4 +1,5 @@
 "fileExtensions": {
+  "astro": "_file_astro",
   "7z": "_file_zip",
   "7zip": "_file_zip",
   "a51": "_file_assembly",
