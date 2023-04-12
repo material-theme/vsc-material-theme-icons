@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.5](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.7.4...v2.7.5) (2023-04-12)
+
+
+### Features
+
+* add astro file icon ([7a8912f](https://github.com/material-theme/vsc-material-theme-icons/commit/7a8912f0561c84be718531906cc029634261a0f6))
+
 ### [2.7.4](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.7.3...v2.7.4) (2023-03-24)
 
 
