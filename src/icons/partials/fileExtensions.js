@@ -333,6 +333,8 @@
   "tmcolor": "_file_markup",
   "tmLanguage": "_file_xml",
   "tmTheme": "_file_markup",
+  "tintin": "_file_tintin",
+  "tintin.php": "_file_tintin",
   "todo": "_file_todo",
   "toml": "_file_settings",
   "ts": "_file_typescript",
