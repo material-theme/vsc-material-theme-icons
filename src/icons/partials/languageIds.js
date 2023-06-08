@@ -69,5 +69,6 @@
   "apex": "_file_salesforce",
   "apex-anon": "_file_salesforce",
   "vhdl": "_file_vhdl",
-  "nix": "_file_nix"
+  "nix": "_file_nix",
+  "zig": "_file_zig"
 },

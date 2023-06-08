@@ -374,6 +374,8 @@
   "yuv": "_file_movie",
   "zep": "_file_zephyr",
   "zip": "_file_zip",
+  "zig": "_file_zig",
+  "zig.zon": "_file_zig",
   "zsh": "_file_console",
   "test.jsx": "_file_test",
   "test.js": "_file_test",
