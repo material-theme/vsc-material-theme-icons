@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.7.5...v2.8.0) (2023-06-08)
+
+
+### Features
+
+* add zig file icon ([2684d5a](https://github.com/material-theme/vsc-material-theme-icons/commit/2684d5aa25af4948e8a4df1acf2f2de6c2e0f6cc))
+
 ### [2.7.5](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.7.4...v2.7.5) (2023-04-12)
 
 
