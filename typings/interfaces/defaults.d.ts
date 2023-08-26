@@ -16,6 +16,7 @@ export interface IDefaultsThemeIconVariant {
   Light: string;
   Palenight: string;
   Ocean: string;
+  DeepForest: string;
 }
 
 export interface IDefaultsThemeIcons {
@@ -54,6 +55,8 @@ export interface IDefaultsThemeVariant {
   PalenightHighContrast: string;
   Ocean: string;
   OceanHighContrast: string;
+  DeepForest: string;
+  DeepForestHighContrast: string;
 }
 
 export interface IAccents {
