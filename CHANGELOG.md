@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.8.0...v3.0.0) (2023-08-26)
+
+
+### Features
+
+* add deep forest icons ([dd4ccb6](https://github.com/material-theme/vsc-material-theme-icons/commit/dd4ccb64fc2d76717517474b0bedd5933c686371))
+
 ## [2.8.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v2.7.5...v2.8.0) (2023-06-08)
 
 
