@@ -55,8 +55,8 @@ export interface IDefaultsThemeVariant {
   PalenightHighContrast: string;
   Ocean: string;
   OceanHighContrast: string;
-  DeepForest: string;
-  DeepForestHighContrast: string;
+  Deepforest: string;
+  DeepforestHighContrast: string;
 }
 
 export interface IAccents {
