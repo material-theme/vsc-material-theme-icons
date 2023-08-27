@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.3](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.0.2...v3.0.3) (2023-08-27)
+
+
+### Bug Fixes
+
+* deepforest theme label ([dc524fb](https://github.com/material-theme/vsc-material-theme-icons/commit/dc524fbb060e6b5ad28eeada9ae358096e4ed423))
+
 ### [3.0.2](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.0.0...v3.0.2) (2023-08-27)
 
 
