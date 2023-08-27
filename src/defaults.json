@@ -158,7 +158,7 @@
     "Light": "eq-material-theme-icons-light",
     "Palenight": "eq-material-theme-icons-palenight",
     "Ocean": "eq-material-theme-icons-ocean",
-    "DeepForest": "eq-material-theme-icons-deep-forest"
+    "Deepforest": "eq-material-theme-icons-deepforest"
   },
   "themeVariantsColours": {
     "Darker": "#424242",
@@ -171,8 +171,8 @@
     "Palenight High Contrast": "#4E5579",
     "Ocean": "#474C60",
     "Ocean High Contrast": "#474C60",
-    "DeepForest": "#375844",
-    "DeepForest High Contrast": "#375844"
+    "Deepforest": "#375844",
+    "Deepforest High Contrast": "#375844"
   },
   "variantsIcons": [
     "_folder_nginx",

@@ -77,9 +77,9 @@
         "path": "./out/variants/Material-Theme-Icons-Light.json"
       },
       {
-        "id": "eq-material-theme-icons-deep-forest",
+        "id": "eq-material-theme-icons-deepforest",
         "label": "Material Theme Icons Deep Forest",
-        "path": "./out/variants/Material-Theme-Icons-DeepForest.json"
+        "path": "./out/variants/Material-Theme-Icons-Deepforest.json"
       }
     ]
   },
