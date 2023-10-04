@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.0.4...v3.1.0) (2023-10-04)
+
+
+### Features
+
+* add icons for vite config,  and various mjs/cjs extensions ([4e61af7](https://github.com/material-theme/vsc-material-theme-icons/commit/4e61af7b95012b2475b79cd1a6d5944c8263368a)), closes [#228](https://github.com/material-theme/vsc-material-theme-icons/issues/228)
+
 ### [3.0.4](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.0.3...v3.0.4) (2023-08-27)
 
 
