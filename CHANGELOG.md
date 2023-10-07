@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.1.0...v3.1.1) (2023-10-07)
+
+
+### Bug Fixes
+
+* restore .postcss file icon and add postcss language id ([7ede893](https://github.com/material-theme/vsc-material-theme-icons/commit/7ede893fa0ed2bfd5767a379689b4e606476b382))
+
 ## [3.1.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.0.4...v3.1.0) (2023-10-04)
 
 
