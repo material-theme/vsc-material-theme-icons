@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.2](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.1.1...v3.1.2) (2023-10-07)
+
+
+### Bug Fixes
+
+* add vite.config.ts file icon ([0346e83](https://github.com/material-theme/vsc-material-theme-icons/commit/0346e8311838c0b1914a688aa410c82d175d70da)), closes [#230](https://github.com/material-theme/vsc-material-theme-icons/issues/230)
+
 ### [3.1.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.1.0...v3.1.1) (2023-10-07)
 
 
