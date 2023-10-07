@@ -1,4 +1,3 @@
-<p align="center"><img width="100%" src="https://repobeats.axiom.co/api/embed/455450962afd5f3f7cc115d2e8303cdcfa039dd0.svg"></p>
 <p align="center">
 <a href="https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme#review-details"><img src="https://img.shields.io/badge/marketplace-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a>
 </p>
