@@ -210,6 +210,7 @@
   "patch": "_file_git",
   "pbm": "_file_image",
   "pcss": "_file_postcss",
+  "postcss": "_file_postcss",
   "pdb": "_file_database",
   "pdf": "_file_pdf",
   "pem": "_file_key",
