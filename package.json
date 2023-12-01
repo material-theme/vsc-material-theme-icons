@@ -47,7 +47,7 @@
       {
         "command": "eqMaterialThemeIcons.fixIcons",
         "title": "Fix icons accent. Based on Material Theme",
-        "category": "🖌 Material Theme Icons"
+        "category": "Material Theme Icons"
       }
     ],
     "iconThemes": [
