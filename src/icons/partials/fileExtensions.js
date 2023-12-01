@@ -1,4 +1,6 @@
 "fileExtensions": {
+  "surrealql": "_file_surrealql",
+  "surql": "_file_surrealql",
   "astro": "_file_astro",
   "7z": "_file_zip",
   "7zip": "_file_zip",

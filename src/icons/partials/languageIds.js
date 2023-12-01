@@ -1,4 +1,5 @@
 "languageIds": {
+  "surrealql": "_file_surrealql",
   "bat": "_file_cmd",
   "c": "_file_c",
   "clojure": "_file_clojure",
