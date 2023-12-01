@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.1.6...v3.2.0) (2023-12-01)
+
+
+### Features
+
+* add surrealql file icon ([57c5709](https://github.com/material-theme/vsc-material-theme-icons/commit/57c5709a030e1cf70e92da6c8172ea18a7531a57)), closes [#232](https://github.com/material-theme/vsc-material-theme-icons/issues/232)
+
 ### [3.1.6](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.1.5...v3.1.6) (2023-12-01)
 
 ### [3.1.5](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.1.4...v3.1.5) (2023-12-01)
