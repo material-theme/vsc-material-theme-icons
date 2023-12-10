@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.2.0...v3.3.0) (2023-12-10)
+
+
+### Features
+
+* add slurm/sbatch extension icon ([db8bff5](https://github.com/material-theme/vsc-material-theme-icons/commit/db8bff5464f7b4415951654bae17a48ac65df5c2))
+
 ## [3.2.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.1.6...v3.2.0) (2023-12-01)
 
 
