@@ -10,7 +10,7 @@
       ],
       "command": "npm",
       "dependsOn": "tsc",
-      "label": "Build Icons",
+      "label": "build",
       "group": {
         "kind": "build",
         "isDefault": true
