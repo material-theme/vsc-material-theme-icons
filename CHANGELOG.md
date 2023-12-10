@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.3.0...v3.3.1) (2023-12-10)
+
+
+### Bug Fixes
+
+* slurm icon color ([0673669](https://github.com/material-theme/vsc-material-theme-icons/commit/0673669e2e11265e0844561d88f160c6861cb089))
+
 ## [3.3.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.2.0...v3.3.0) (2023-12-10)
 
 
