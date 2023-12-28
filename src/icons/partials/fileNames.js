@@ -178,6 +178,7 @@
   "vite.config.cjs": "_file_vite",
   "vite.config.mjs": "_file_vite",
   "vite.config.ts": "_file_vite",
+  "vite.config.mts": "_file_vite",
   "postcss.config.cjs": "_file_postcss",
   "postcss.config.js": "_file_postcss",
   "postcss.config.mjs": "_file_postcss",
