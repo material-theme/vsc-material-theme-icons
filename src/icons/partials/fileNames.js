@@ -1,4 +1,5 @@
 "fileNames": {
+  "biome.json": "_file_biome",
   "Pipefile": "_file_pipfile",
   "Pipefile.lock": "_file_pipfile-lock",
   "nuxt.config.js": "_file_nuxtconfig",
