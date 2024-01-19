@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.3.1...v3.4.0) (2024-01-19)
+
+
+### Features
+
+* add icon for biome.json file ([8a53637](https://github.com/material-theme/vsc-material-theme-icons/commit/8a53637ec35f6ee8c08a89b153d4308983cbc57b))
+* add icon for kivy language ([ef62890](https://github.com/material-theme/vsc-material-theme-icons/commit/ef628900d6065af821763e3f7ceb13a7342ce78d))
+* add vite.config.mts to vite file names ([#236](https://github.com/material-theme/vsc-material-theme-icons/issues/236)) ([dec6776](https://github.com/material-theme/vsc-material-theme-icons/commit/dec677681744a5cfb7f994a68d13a2c66161b37e))
+
 ### [3.3.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.3.0...v3.3.1) (2023-12-10)
 
 
