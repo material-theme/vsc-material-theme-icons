@@ -72,5 +72,6 @@
   "apex-anon": "_file_salesforce",
   "vhdl": "_file_vhdl",
   "nix": "_file_nix",
+  "kivy": "_file_kivy",
   "zig": "_file_zig"
 },

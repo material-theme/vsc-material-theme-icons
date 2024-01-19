@@ -381,5 +381,6 @@
   "vhdl": "_file_vhdl",
   "wakatime": "_file_wakatime",
   "slurm": "_file_slurm",
+  "kv": "_file_kivy",
   "sbatch": "_file_slurm"
 }
