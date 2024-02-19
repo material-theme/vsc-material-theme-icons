@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.4.0...v3.5.0) (2024-02-19)
+
+
+### Features
+
+* add vitest config file icon ([87a3df4](https://github.com/material-theme/vsc-material-theme-icons/commit/87a3df4dacf8ba1f00f1b246b254dc9d73e98bde)), closes [#238](https://github.com/material-theme/vsc-material-theme-icons/issues/238)
+* add yarn config icon ([09da4c4](https://github.com/material-theme/vsc-material-theme-icons/commit/09da4c4effa0efb140486d0faaf61d566cbb48b4)), closes [#239](https://github.com/material-theme/vsc-material-theme-icons/issues/239)
+
 ## [3.4.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.3.1...v3.4.0) (2024-01-19)
 
 
