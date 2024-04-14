@@ -206,5 +206,7 @@
   "postcssrc.mjs": "_file_postcss",
   "postcssrc.ts": "_file_postcss",
   "postcssrc.yml": "_file_postcss",
-  "postcssrc": "_file_postcss"
+  "postcssrc": "_file_postcss",
+  ".bunfig.toml": "_file_bun",
+  "bunfig.toml": "_file_bun"
 },

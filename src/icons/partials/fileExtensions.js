@@ -382,5 +382,6 @@
   "wakatime": "_file_wakatime",
   "slurm": "_file_slurm",
   "kv": "_file_kivy",
-  "sbatch": "_file_slurm"
+  "sbatch": "_file_slurm",
+  "lockb": "_file_bun"
 }
