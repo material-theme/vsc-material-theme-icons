@@ -1,4 +1,4 @@
-<p align="center"><img width="800px" src="https://i.ibb.co/fdDRkWb/Frame.jpg"></p>
+<p align="center"><img width="800px" src="https://i.ibb.co/9N4GbFw/preview.png"></p>
 <p align="center">
 <a href="https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme#review-details"><img src="https://img.shields.io/badge/marketplace-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/></a>
 </p>
