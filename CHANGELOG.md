@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.6.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.5.0...v3.6.0) (2024-04-14)
+
+
+### Features
+
+* add bun file icon ([c49bf31](https://github.com/material-theme/vsc-material-theme-icons/commit/c49bf31d5cc5a11a419f9011151b0bf87727d3f0)), closes [#241](https://github.com/material-theme/vsc-material-theme-icons/issues/241)
+* add simple preview ([c7e289b](https://github.com/material-theme/vsc-material-theme-icons/commit/c7e289b5ed2c66e482cda97900999ff57398ed50))
+
 ## [3.5.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.4.0...v3.5.0) (2024-02-19)
 
 
