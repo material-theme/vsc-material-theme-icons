@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.ref, 'tag')
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Use Node Version 20
         uses: actions/setup-node@v1
@@ -26,7 +26,7 @@ jobs:
         id: npm-cache-dir
         run: echo "dir=$(npm config get cache)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
         with:
           path: ${{ steps.npm-cache-dir.outputs.dir }}
@@ -41,7 +41,7 @@ jobs:
       - name: Build extension
         run: npm run build
 
-      - uses: lannonbr/vsce-action@master
+      - uses: lannonbr/vsce-action@3.0.0
         with:
           args: "publish -p $VSCE_TOKEN"
         env:
