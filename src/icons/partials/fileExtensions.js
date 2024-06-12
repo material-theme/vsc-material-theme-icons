@@ -383,5 +383,6 @@
   "slurm": "_file_slurm",
   "kv": "_file_kivy",
   "sbatch": "_file_slurm",
-  "lockb": "_file_bun"
+  "lockb": "_file_bun",
+  "cu": "_file_cuda"
 }
