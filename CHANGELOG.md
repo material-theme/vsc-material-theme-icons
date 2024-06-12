@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.6.1](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.6.0...v3.6.1) (2024-06-12)
+
+
+### Features
+
+* add icon for `tailwind.config.ts` file ([29139cf](https://github.com/material-theme/vsc-material-theme-icons/commit/29139cf9ebbf4f1a2aa4b119af3ae1959d2d682e))
+* add icon to cuda files (.cu) ([98bbcb4](https://github.com/material-theme/vsc-material-theme-icons/commit/98bbcb4835c553d3e376cdfe6dd105c7d2ef3440)), closes [#244](https://github.com/material-theme/vsc-material-theme-icons/issues/244)
+* add icon to more env files. Closes [#243](https://github.com/material-theme/vsc-material-theme-icons/issues/243) ([20a0396](https://github.com/material-theme/vsc-material-theme-icons/commit/20a0396207b78f6c3ab9713fbff142fa9fa694e4))
+* add icons for go.mod and go.sum ([77686d1](https://github.com/material-theme/vsc-material-theme-icons/commit/77686d151bc4d157d86e0ed147c0156a353d95f1)), closes [#245](https://github.com/material-theme/vsc-material-theme-icons/issues/245)
+
 ## [3.6.0](https://github.com/material-theme/vsc-material-theme-icons/compare/v3.5.0...v3.6.0) (2024-04-14)
 
 
