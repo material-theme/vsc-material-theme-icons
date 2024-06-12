@@ -211,5 +211,7 @@
   "postcssrc.yml": "_file_postcss",
   "postcssrc": "_file_postcss",
   ".bunfig.toml": "_file_bun",
-  "bunfig.toml": "_file_bun"
+  "bunfig.toml": "_file_bun",
+  "go.mod": "_file_go-mod",
+  "go.sum": "_file_go-sum"
 },
