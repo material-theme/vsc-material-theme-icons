@@ -8,6 +8,7 @@
   "tailwind.config.full.js": "_file_tailwind",
   "tailwind.config.cjs": "_file_tailwind",
   "tailwind.config.full.cjs": "_file_tailwind",
+  "tailwind.config.ts": "_file_tailwind",
   ".browserslistrc": "_file_browserlist",
   ".nvmrc": "_file_node",
   ".graphqlconfig.yml": "_file_graphql",
