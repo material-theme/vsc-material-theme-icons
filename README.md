@@ -29,4 +29,4 @@ After 10 years Material Theme and derivates moved (months ago) to closed source 
 
 If you have a brain but don't agree with this decision, feel free to play with the 800+ forks we have that are still using the old Apache license, including with the full history before we moved to closed source.
 
-### [Go to forks ↗️](https://github.com/material-theme/vsc-material-theme/forks)
+### [Go to forks ↗️](https://github.com/material-theme/vsc-material-theme-icons/forks)
