@@ -18,7 +18,7 @@ Checkout our discussions board for more info
 
 We have a dedicated Discussions board where you can suggest new icons or discuss with other users
 
-### [Go to discussions ↗️](https://github.com/material-theme/vsc-material-theme-icons/discussions)
+### [Suggest new icon ↗️](https://github.com/material-theme/vsc-material-theme-icons/discussions/new?category=icon-requests)
 
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmineblocks.com%2F1%2Fwiki%2Fimages%2F5%2F59%2FEmpty.png&f=1&nofb=1&ipt=272d1bf6ef886b68f90fc4b76685cf3d69c29691db2a6136a83a4f99e53db919&ipo=images" height="30">
 
